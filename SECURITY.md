@@ -1,1 +1,0 @@
-Do not use any part of our code because it is illegal and we can contact with our NTPD and hack your PC!
