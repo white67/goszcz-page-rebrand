@@ -3,7 +3,7 @@
   --lightgrey: #cfcfcf;
   --darkblue: #182546;
   --normalgrey: #878787;
-  --borderSize: 0px;
+  --borderSize: 2px;
 }
 
 * {
@@ -16,7 +16,7 @@
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   background-color: black;
   color: white;
   margin: 0px;
@@ -79,8 +79,37 @@ body .center {
 .headerBottom {
   height: 40px;
   background-color: white;
-  color: var(--darkblue)
-  border: 1px solid pink;
+  color: var(--darkblue);
+  border: var(--borderSize) solid pink;
+}
+
+nav {
+  color: var(--darkblue);
+  background-color: white;
+  border: var(--borderSize) solid green;
+}
+
+nav div {
+  border: var(--borderSize) solid yellow;
+}
+
+.mainNavigation {
+  list-style: none;
+  margin: 0;
+}
+
+.mainNavigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+
+.mainNavigation a:hover {
+  color: var(--red);
+}
+
+.mainNavigation a:visited {
+  
 }
 
 /*floats*/
