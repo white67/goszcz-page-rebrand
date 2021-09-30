@@ -1,7 +1,8 @@
 :root {
-  --darkgrey: #111111;
-  --grey: #222222;
-  --granat: #09142e;
+  --red: #9a3231;
+  --lightgrey: #cfcfcf;
+  --darkblue: #182546;
+  --normalgrey: #878787;
   --borderSize: 0px;
 }
 
@@ -16,7 +17,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  background-color: var(--darkgrey);
+  background-color: black;
   color: white;
   margin: 0px;
 }
@@ -38,7 +39,7 @@ section {
 
 footer {
   display: block;
-  background-color: var(--granat);
+  background-color: var(--darkblue);
   border: var(--borderSize) solid rgb(0, 110, 255);
 }
 
@@ -65,11 +66,11 @@ footer {
 }
 
 #footerLogo a:hover {
-	background: #0d1a3a;
-	-o-transform: scale(0.93);
-	-webkit-transform: scale(0.93);
-	-ms-transform: scale(0.93);
-	transform: scale(0.93);
+  background: #0d1a3a;
+  -o-transform: scale(0.93);
+  -webkit-transform: scale(0.93);
+  -ms-transform: scale(0.93);
+  transform: scale(0.93);
 }
 
 #footerLogo img {
@@ -87,7 +88,7 @@ footer {
 }
 
 #footerNav a:hover {
-	color: #a7b6dd;
+  color: #a7b6dd;
 }
 
 #footerContact {
@@ -114,7 +115,7 @@ footer {
 }
 
 #footerEnd {
-    padding-top: 3%;
+  padding-top: 3%;
   border: var(--borderSize) solid lightskyblue;
   text-align: center;
   padding-top: 2%;
@@ -132,7 +133,7 @@ body .width100 {
 }
 
 body .center {
-  max-width: 1250px;
+  max-width: 1100px;
   margin: 0px auto;
   box-sizing: border-box;
   padding: 0px 30px;
@@ -141,11 +142,14 @@ body .center {
 .headerTop {
   height: 100px;
   border: 1px solid green;
+  background-color: var(--red);
 }
 
 .headerBottom {
   height: 40px;
-  background-color: var(--grey);
+  background-color: white;
+  color: var(--darkblue)
+  border: 1px solid pink;
 }
 
 /*floats*/
