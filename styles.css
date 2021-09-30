@@ -102,6 +102,7 @@ nav div {
   text-decoration: none;
   display: block;
   padding: 1em;
+  color: var(--darkblue) ;
 }
 
 .mainNavigation a:hover {
