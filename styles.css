@@ -22,10 +22,51 @@ body {
   margin: 0px;
 }
 
-header {
-  display: block;
-  border: var(--borderSize) solid yellow;
+header, nav {
+  background-color: var(--red);
+
 }
+
+.topHeader {
+  display: flex;
+  justify-content:space-between;
+  height: 5vh;
+}
+
+
+.topContact {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.topContact a{
+  color: white;
+  text-decoration: none;
+}
+
+.topContactEmail, .topContactPhone {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 5%;
+  width: 25%;
+}
+
+.topSettings, .topSettings div {
+  display: flex;
+}
+
+
+.mainNav {
+  display: flex;
+}
+
 
 main {
   display: block;
