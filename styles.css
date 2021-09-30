@@ -1,6 +1,8 @@
 :root {
   --darkgrey: #111111;
   --grey: #222222;
+  --granat: #09142e;
+  --borderSize: 2px;
 }
 
 * {
@@ -13,6 +15,7 @@
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
+  font-size: 20px;
   background-color: var(--darkgrey);
   color: white;
   margin: 0px;
@@ -20,22 +23,108 @@ body {
 
 header {
   display: block;
-  border: 1px solid yellow;
+  border: var(--borderSize) solid yellow;
 }
 
 main {
   display: block;
-  border: 1px solid rgb(255, 0, 242);
+  border: var(--borderSize) solid rgb(255, 0, 242);
 }
 
 section {
   display: block;
-  border: 1px solid rgb(29, 250, 0);
+  border: var(--borderSize) solid rgb(29, 250, 0);
 }
 
 footer {
   display: block;
-  border: 1px solid rgb(0, 110, 255);
+  background-color: var(--granat);
+  border: var(--borderSize) solid rgb(0, 110, 255);
+}
+
+#footerMain {
+  border: var(--borderSize) solid turquoise;
+}
+
+#footerLogo {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#footerLogo a {
+  transition: transform ease-out 0.1s, background 0.2s;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+#footerLogo a:hover {
+	background: #0d1a3a;
+	-o-transform: scale(0.93);
+	-webkit-transform: scale(0.93);
+	-ms-transform: scale(0.93);
+	transform: scale(0.93);
+}
+
+#footerLogo img {
+  height: 100%;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+#footerNav {
+  border: var(--borderSize) solid purple;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#footerNav a:hover {
+	color: #a7b6dd;
+}
+
+#footerContact {
+  border: var(--borderSize) solid yellow;
+  text-align: left;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 100%;
+}
+
+#footerContact div {
+  height: 20%;
+  padding-top: 2%;
+  padding-bottom: 4%;
+  border: var(--borderSize) solid rgb(0, 122, 96);
+}
+
+#footerContact img {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
+
+#footerEnd {
+    padding-top: 3%;
+  border: var(--borderSize) solid lightskyblue;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  height: 200px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
 body .width100 {
@@ -65,7 +154,7 @@ body .overflowHidden {
 }
 
 .displayNone {
-    display: none;
+  display: none;
 }
 
 /*flex*/
@@ -106,4 +195,12 @@ body .overflowHidden {
 }
 .flexFull {
   flex: auto;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: white;
+  border-radius: 100%;
+  display: inline-block;
 }
