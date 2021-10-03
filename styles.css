@@ -226,16 +226,6 @@ nav {
   border-radius: 120px;
 }
 
-@media screen and (max-width: 768px){
-  .mainNavButtons {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 18.5vh; /*Może być uselles*/
-    background-color: #9a3231;
-  }
-}
-
 .mainNavButtons {
   display: flex;
   flex-direction: row;
