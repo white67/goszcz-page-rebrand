@@ -407,21 +407,22 @@ main {
 
 .newsSectionTitle {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 40px;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 35px;
   font-weight: 500;
-  width: 100%;
+
 }
 
-.newsSectionTitle div {
-  width: 100%;
+.newsSectionTitleText {
+  margin: 40px;
 }
 
 .smallLine {
-  height: 2px;
+  height: 3px;
+  width: 50%;
+  margin: 10px;
   background-color: var(--lightgrey);
 }
 
@@ -437,13 +438,56 @@ main {
   gap: 3%;
   justify-content: space-around;
   font-weight: 500;
-  border: var(--borderSize) solid green;
 }
 
 .newsElement {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   width: 330px;
+  height: 450px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   margin-bottom: 40px;
+  border: 1px solid var(--lightgrey);
+}
+
+.newsElement a {
+  text-decoration: none;
+  color: var(--red);
+}
+
+.newsElImage {
+  height: 50%;
+
+}
+
+.newsElImage img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  max-height: 100%;
+}
+
+.newsElTitle {
+  text-align: left;
+  font-size: 25px;
+  overflow-wrap: break-word;
+  color: var(--darkblue);
+  padding: 25px 25px 0 25px;
+}
+
+.newsElDate {
+  text-align: left;
+  font-size: 15px;
+  color: var(--normalgrey);
+  padding: 15px 25px 0 25px;
+}
+
+.newsElShowMore {
+  text-align: right;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  padding: 15px 25px 0 25px;
 }
