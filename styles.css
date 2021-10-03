@@ -4,6 +4,7 @@
   --superwhite: #f0f0f0;
   --lightgrey: #cfcfcf;
   --darkblue: #182546;
+  --darkblue2: rgba(24, 37, 70, 0.75);
   --normalgrey: #878787;
   --borderSize: 2px;
 }
@@ -158,7 +159,6 @@ nav {
   color: var(--darkblue);
   font-weight: 500;
   background-color: white;
-  border: var(--borderSize) solid green;
 }
 
 .mainNav {
@@ -297,7 +297,38 @@ nav {
 /* MAIN SECTION*/
 /* MAIN SECTION*/
 
+
 section {
-  display: block;
-  color: black;
+  display: flex;
+
+  background-image: url("./files/graphic/banner-nowy-targ.png"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 600px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.sectionMain {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  font-weight: 500;
+  font-size: 47px;
+  border: var(--borderSize) solid green;
+}
+
+.sectionMainTitle {
+  padding-bottom: 10%;
+  line-height: 60px;
+}
+
+.sectionMainTitle > span {
+  padding-left: 80px;
+}
+
+.mainTitle {
+  background-color: var(--darkblue2);
+  padding: 10px 80px 10px 80px;
 }
