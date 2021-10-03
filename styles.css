@@ -1,6 +1,7 @@
 :root {
   --red: #9a3231;
   --darkred: #751312;
+  --lightred: #e9706f;
   --superwhite: #f0f0f0;
   --lightgrey: #cfcfcf;
   --darkblue: #182546;
@@ -504,6 +505,7 @@ main {
   border-radius: 5px;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
+  margin-bottom: 30px;
   color: white;
   background-color: var(--red);
 }
