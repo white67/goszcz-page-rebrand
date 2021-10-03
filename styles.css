@@ -214,6 +214,28 @@ nav {
   transform: scale(0.93);
 }
 
+.burger{
+  display: none;
+}
+
+.burger div{
+  width: 25px;
+  height: 5px;
+  background-color: #9a3231;
+  margin: 4px;
+  border-radius: 120px;
+}
+
+@media screen and (max-width: 768px){
+  .mainNavButtons {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 18.5vh; /*Może być uselles*/
+    background-color: #9a3231;
+  }
+}
+
 .mainNavButtons {
   display: flex;
   flex-direction: row;
