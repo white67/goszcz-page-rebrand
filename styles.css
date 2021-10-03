@@ -652,43 +652,44 @@ main {
 /* FOOTER */
 
 .footertop{
-display: flex;
-color:black;
-font-size: 30px;
-}
-
-.footerleft{
-display: flex;
-width: 50%;
-border: 2px solid var(--lightgrey);
-border-top: none;
-flex-direction: column;
-}
-
-.nazwaszkoly{
-  padding-top: 40px;
   display: flex;
+  color:black;
+  font-size: 30px;
+  }
+  
+  .footerleft{
+  display: flex;
+  width: 50%;
+  border: 2px solid var(--lightgrey);
+  border-top: none;
+  flex-direction: column;
+  }
+  
+  .nazwaszkoly{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footerkontakt{
+  padding-top: 30px;
+  display: flex;
+  height: 150px;
+  justify-content: space-around;
+  
+  }
+  
+  .adress{
+  padding-top: 20px;
+  display: flex;
+  height: 30%;
   align-items: center;
-  justify-content: center;
-}
-
-.footerkontakt{
-padding-top: 30px;
-display: flex;
-height: 150px;
-justify-content: space-around;
-
-}
-
-.adress{
-padding-top: 20px;
-display: flex;
-height: 30%;
-align-items: center;
-font-size: 25px;
-color: var(--normalgrey) ;
-}
-
-.footerkontakt img{
-height:300%;
-}
+  font-size: 25px;
+  color: var(--normalgrey) ;
+  }
+  
+  .footerkontakt img{
+  height:300%;
+  }
+  
