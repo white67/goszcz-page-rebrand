@@ -220,6 +220,28 @@ nav {
   color: var(--darkblue);
 }
 
+.burger{
+  display: none;
+}
+
+.burger div{
+  width: 25px;
+  height: 5px;
+  background-color: #9a3231;
+  margin: 4px;
+  border-radius: 120px;
+}
+
+@media screen and (max-width: 760px){
+  .mainNavButtons {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+  }
+
+
+}
+
 .mainNavList {
   display: flex;
   flex-direction: row;
@@ -642,34 +664,42 @@ main {
 .footertop{
 display: flex;
 color:black;
-font-size: 1.8vw;
+font-size: 30px;
 }
 
 .footerleft{
+display: flex;
 width: 50%;
 border: 2px solid var(--lightgrey);
 border-top: none;
-}
-
-.nazwaszkoly{
-  display: flex;
-  align-items: center;
-}
-
-.footerkontakt{
-display: flex;
-height: 250px;
 flex-direction: column;
 }
 
+.nazwaszkoly{
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerkontakt{
+padding-top: 30px;
+display: flex;
+height: 150px;
+justify-content: space-around;
+
+}
+
 .adress{
+padding-top: 20px;
 display: flex;
 height: 30%;
 align-items: center;
-font-size: 1.5vw;
+font-size: 25px;
 color: var(--normalgrey) ;
 }
+
 .footerkontakt img{
-height:80%;
+height:300%;
 }
 
