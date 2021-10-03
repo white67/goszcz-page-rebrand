@@ -214,28 +214,6 @@ nav {
   color: var(--darkblue);
 }
 
-.burger{
-  display: none;
-}
-
-.burger div{
-  width: 25px;
-  height: 5px;
-  background-color: #9a3231;
-  margin: 4px;
-  border-radius: 120px;
-}
-
-@media screen and (max-width: 760px){
-  .mainNavButtons {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-  }
-
-
-}
-
 .mainNavList {
   display: flex;
   flex-direction: row;
