@@ -154,6 +154,12 @@ header {
   transition: background-color 200ms linear;
 }
 
+@media only screen and (max-width: 800px) {
+  .topContact {
+    display: none;
+  }
+}
+
 /* MAIN NAV*/
 /* MAIN NAV*/
 /* MAIN NAV*/
@@ -337,6 +343,78 @@ section {
   padding: 10px 80px 10px 80px;
 }
 
+@media only screen and (max-width: 820px) {
+  .sectionMain {
+    font-size: 40px;
+  }
+  .sectionMainTitle {
+    line-height: 50px;
+  }
+  section {
+    height: 500px;
+  }
+  .mainTitle {
+    padding: 10px 45px 10px 70px;
+  }
+  .sectionMainTitle > span {
+    padding-left: 70px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .sectionMain {
+    font-size: 30px;
+  }
+  .sectionMainTitle {
+    line-height: 38px;
+  }
+  section {
+    height: 450px;
+  }
+  .mainTitle {
+    padding: 10px 22px 10px 60px;
+  }
+  .sectionMainTitle > span {
+    padding-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .sectionMain {
+    font-size: 26px;
+  }
+  .sectionMainTitle {
+    line-height: 35px;
+  }
+  section {
+    height: 350px;
+  }
+  .mainTitle {
+    padding: 10px 22px 10px 22px;
+  }
+  .sectionMainTitle > span {
+    padding-left: 22px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .sectionMain {
+    font-size: 20px;
+  }
+  .sectionMainTitle {
+    line-height: 20px;
+  }
+  section {
+    height: 300px;
+  }
+  .mainTitle {
+    padding: 10px 20px 10px 30px;
+  }
+  .sectionMainTitle > span {
+    padding-left: 30px;
+  }
+}
+
 /* MAIN BODY */
 /* MAIN BODY */
 /* MAIN BODY */
@@ -365,8 +443,10 @@ main {
 
 .secondNav {
   display: flex;
-  justify-content: space-between;
-  font-size: 25px;
+  justify-content:space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 20px;
   font-weight: 500;
   width: 100%;
 }
@@ -384,11 +464,9 @@ main {
 
 .secDivElement {
   display: flex;
-  border-radius: 20px 20px 0 0;
-  padding: 40px 0px 40px 0px;
+  padding: 30px 100px 30px 100px;
   align-items: center;
   flex-direction: column;
-  width: 100%;
 }
 
 .secDivElement:hover {
@@ -396,7 +474,7 @@ main {
 }
 
 .secDivElement img {
-  max-width: 60px;
+  max-width: 50px;
   margin-bottom: 10px;
 }
 
@@ -421,7 +499,7 @@ main {
 }
 
 .newsSectionTitleText {
-  margin: 40px 40px 20px 40px;
+  margin: 30px 40px 20px 40px;
 }
 
 .smallLine {
@@ -525,12 +603,16 @@ main {
 
 .logoSection {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  padding: 50px 0 50px 0;
+  padding: 50px 25px 50px 25px;
+  gap: 40px 40px;
   justify-content: space-evenly;
   background-color: var(--blendblue);
 }
+
+
 
 .logoSection a {
   -o-transition: -o-transform ease-out 0.1s, background 0.2s;
