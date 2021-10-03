@@ -6,6 +6,7 @@
   --darkblue: #182546;
   --darkblue2: rgba(24, 37, 70, 0.75);
   --normalgrey: #878787;
+  --blendblue: #5b647c;
   --borderSize: 2px;
 }
 
@@ -33,6 +34,10 @@ body .center {
   max-width: 1200px;
   margin: 0px auto;
   box-sizing: border-box;
+}
+
+body a {
+  text-decoration: none;
 }
 
 /* HEADER */
@@ -315,7 +320,6 @@ section {
   width: 100%;
   font-weight: 500;
   font-size: 47px;
-  border: var(--borderSize) solid green;
 }
 
 .sectionMainTitle {
@@ -346,7 +350,8 @@ main {
   display: flex;
   margin-top: -10px;
   flex-wrap: wrap;
-  color: black;
+  color: var(--darkblue);
+  border: var(--borderSize) solid green;
 }
 
 .mainBody {
@@ -412,17 +417,16 @@ main {
   justify-content: space-around;
   font-size: 35px;
   font-weight: 500;
-
 }
 
 .newsSectionTitleText {
-  margin: 40px;
+  margin: 40px 40px 20px 40px;
 }
 
 .smallLine {
   height: 3px;
   width: 50%;
-  margin: 10px;
+  margin: 40px 40px 20px 40px;
   background-color: var(--lightgrey);
 }
 
@@ -458,6 +462,10 @@ main {
   color: var(--red);
 }
 
+.newsElement a:hover {
+  color: var(--darkred);
+}
+
 .newsElImage {
   height: 50%;
 
@@ -490,4 +498,53 @@ main {
   bottom: 5%;
   right: 5%;
   padding: 15px 25px 0 25px;
+}
+
+.newsSectionShowAll {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  background-color: var(--red);
+}
+
+.newsSectionShowAll:hover {
+  background-color: var(--darkred);
+}
+
+/* LOGO SECTION */
+/* LOGO SECTION */
+/* LOGO SECTION */
+/* LOGO SECTION */
+/* LOGO SECTION */
+/* LOGO SECTION */
+/* LOGO SECTION */
+/* LOGO SECTION */
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0 50px 0;
+  justify-content: space-evenly;
+  background-color: var(--blendblue);
+}
+
+.logoSection a {
+  -o-transition: -o-transform ease-out 0.1s, background 0.2s;
+  -ms-transition: -ms-transform ease-out 0.1s, background 0.2s;
+  -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+  transition: transform ease-out 0.1s, background 0.2s;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.logoSection a:hover {
+  -o-transform: scale(0.93);
+  -webkit-transform: scale(0.93);
+  -ms-transform: scale(0.93);
+  transform: scale(0.93);
 }
