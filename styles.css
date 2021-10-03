@@ -297,7 +297,6 @@ nav {
 /* MAIN SECTION*/
 /* MAIN SECTION*/
 
-
 section {
   display: flex;
 
@@ -316,6 +315,7 @@ section {
   width: 100%;
   font-weight: 500;
   font-size: 47px;
+  border: var(--borderSize) solid green;
 }
 
 .sectionMainTitle {
@@ -330,4 +330,120 @@ section {
 .mainTitle {
   background-color: var(--darkblue2);
   padding: 10px 80px 10px 80px;
+}
+
+/* MAIN BODY */
+/* MAIN BODY */
+/* MAIN BODY */
+/* MAIN BODY */
+/* MAIN BODY */
+/* MAIN BODY */
+/* MAIN BODY */
+/* MAIN BODY */
+/* MAIN BODY */
+
+main {
+  display: flex;
+  margin-top: -10px;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.mainBody {
+  width: 100%;
+  margin-top: -10%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+}
+
+.secondNav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  font-weight: 500;
+  width: 100%;
+}
+
+/*
+.secondNav div {
+  border: var(--borderSize) solid green;
+}
+*/
+
+.secondNav a {
+  text-decoration: none;
+  color: var(--darkblue);
+}
+
+.secDivElement {
+  display: flex;
+  border-radius: 20px 20px 0 0;
+  padding: 40px 0px 40px 0px;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.secDivElement:hover {
+  background-color: var(--superwhite);
+}
+
+.secDivElement img {
+  max-width: 60px;
+  margin-bottom: 10px;
+}
+
+
+/* NEWS SECTION */
+/* NEWS SECTION */
+/* NEWS SECTION */
+/* NEWS SECTION */
+/* NEWS SECTION */
+/* NEWS SECTION */
+/* NEWS SECTION */
+/* NEWS SECTION */
+
+
+.newsSectionTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px;
+  justify-content: space-between;
+  font-size: 35px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.newsSectionTitle div {
+  width: 100%;
+}
+
+.smallLine {
+  height: 2px;
+  background-color: var(--lightgrey);
+}
+
+
+
+.newsSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: stretch;
+  padding: 40px;
+  gap: 3%;
+  justify-content: space-around;
+  font-weight: 500;
+  border: var(--borderSize) solid green;
+}
+
+.newsElement {
+  width: 330px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
 }
