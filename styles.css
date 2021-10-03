@@ -550,3 +550,44 @@ main {
   -ms-transform: scale(0.93);
   transform: scale(0.93);
 }
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+.footertop{
+display: flex;
+color:black;
+font-size: 1.8vw;
+}
+
+.footerleft{
+width: 50%;
+border: 2px solid var(--lightgrey);
+border-top: none;
+}
+
+.nazwaszkoly{
+  display: flex;
+  align-items: center;
+}
+
+.footerkontakt{
+display: flex;
+height: 250px;
+flex-direction: column;
+}
+
+.adress{
+display: flex;
+height: 30%;
+align-items: center;
+font-size: 1.5vw;
+color: var(--normalgrey) ;
+}
+.footerkontakt img{
+height:80%;
+}
+
