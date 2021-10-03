@@ -17,50 +17,95 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  background-color: black;
+  background-color: white;
   color: white;
   margin: 0px;
 }
 
 header, nav {
   background-color: var(--red);
-
 }
 
 .topHeader {
   display: flex;
-  justify-content:space-between;
-  height: 5vh;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: var(--red);
 }
 
+.topHeader a {
+  text-decoration: none;
+  color: white;
+}
 
 .topContact {
   display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: flex-start;
-  width: 100%;
   flex-wrap: wrap;
-  gap: 5%;
+  width: 100%;
 }
 
-.topContact a{
-  color: white;
-  text-decoration: none;
-}
-
-.topContactEmail, .topContactPhone {
+.topConEmail, .topConPhone {
   display: flex;
   align-items: center;
   align-content: center;
-  flex-direction: row;
-  gap: 5%;
-  width: 25%;
+  margin: 5px 15px 5px 15px;
 }
 
-.topSettings, .topSettings div {
-  display: flex;
+.topConEmail img, .topConPhone img {
+  max-width: 25px;
 }
+
+.topConEmail span {
+  margin-left: 8px;
+  margin-right: 5px;
+} 
+
+.topConPhone span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+
+.topSettings {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.topSetContrastLetters, .topSetContrastBtn {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 5px 15px 5px 15px;
+}
+
+.topSetContrastBtn img {
+  max-width: 25px;
+}
+
+.topSetContrastLetters span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.topSetContrastBtn span {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 90%;
+}
+
+
+
+
+
+
+
+
 
 
 .mainNav {
@@ -105,16 +150,9 @@ body .width100 {
 }
 
 body .center {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0px auto;
   box-sizing: border-box;
-  padding: 0px 30px;
-}
-
-.headerTop {
-  height: 100px;
-  border: 1px solid green;
-  background-color: var(--red);
 }
 
 .headerBottom {
