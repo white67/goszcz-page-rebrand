@@ -316,7 +316,6 @@ section {
   width: 100%;
   font-weight: 500;
   font-size: 47px;
-  border: var(--borderSize) solid green;
 }
 
 .sectionMainTitle {
