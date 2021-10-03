@@ -442,7 +442,6 @@ main {
   margin-top: -10px;
   flex-wrap: wrap;
   color: var(--darkblue);
-  border: var(--borderSize) solid green;
 }
 
 .mainBody {
