@@ -224,6 +224,10 @@ nav {
   display: flex;
 }
 
+.navbarico {
+  display: none;
+}
+
 @media screen and (max-width:1039px){
   .burger div {
     width: 25px;
@@ -247,22 +251,23 @@ nav {
 
   .mainNavList {
     margin-left: -300px;
-    padding-left: 100px;
-    top: 14vh;
-    position: fixed;
+    padding-left: 25px;
+    top: 14.5vh;
+    position: absolute;
     background: #9a3231;
-    height: 100vh;
+    height: 75vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
-    transition: all 1s ease-out;
+    transform: translateX(100%);
     pointer-events: none;
   }
   .mainNavList.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
-    pointer-events: all;
+    transform: translateX(5.5%);
+    transition: 0.5s ease-in;
+  }
+
+  .navbarico {
+    display: flex;
   }
 }
 
