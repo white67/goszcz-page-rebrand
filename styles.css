@@ -197,6 +197,24 @@ nav {
   margin: 10px;
 }
 
+@media only screen and (max-width: 900px) {
+  .mainNavLogo img {
+    max-width: 70px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .mainNavLogo img {
+    max-width: 60px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mainNavLogo img {
+    max-width: 50px;
+  }
+}
+
 .mainNavLogo a {
   -o-transition: -o-transform ease-out 0.1s, background 0.2s;
   -ms-transition: -ms-transform ease-out 0.1s, background 0.2s;
@@ -239,6 +257,7 @@ nav {
     margin: 4px;
     border-radius: 120px;
   }
+
   nav {
     position: relative;
   }
@@ -620,17 +639,31 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  align-content: center;
   justify-content: space-around;
   font-size: 35px;
   font-weight: 500;
 }
 
 .newsSectionTitleText {
-  margin: 30px 40px 20px 40px;
+  margin: 30px 40px 10px 40px;
+}
+
+@media only screen and (max-width: 922px) {
+  .newsSectionTitleText {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .newsSectionTitleText {
+    font-size: 28px;
+  }
 }
 
 .smallLine {
-  height: 3px;
+  height: 2px;
   width: 50%;
   margin: 40px 40px 20px 40px;
   background-color: var(--lightgrey);
@@ -862,7 +895,7 @@ main {
   .ftrLeftSchoolLogo {
     display: none;
   }
-  
+
   .ftrLeftName {
     text-align: center;
   }
