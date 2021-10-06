@@ -12,10 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="scripts/temp.js"></script>
+    <script src="scripts/jquery-3.6.0.js"></script>
 </head>
 
 <body>
-
     <header>
         <div class="topHeader center">
             <div>
@@ -65,7 +66,6 @@
             
         </div>
     </header>
-
     <nav>
         <div class="mainNav center">
             <div class="mainNavLogo">
@@ -93,9 +93,9 @@
                     <li><a href="./index.html">Rekrutacja</a></li>
                     <li><a href="./index.html">Dla Ucznia i Rodzica</a>
                             <ul class="drop">
-                            <li><a href="#">Plan lekcji</a></li>
-                            <li><a href="#">E-dziennik Librus</a></li>
-                            <li><a href="#">Zastępstwa</a></li>
+                            <li><a href="https://www.goszczynski.edupage.org/timetable">Plan lekcji</a></li>
+                            <li><a href="https://portal.librus.pl/rodzina">E-dziennik Librus</a></li>
+                            <li><a href="https://www.goszczynski.edupage.org/substitution">Zastępstwa</a></li>
                             <li><a href="#">Matura</a></li>
                             <li><a href="#">Zajęcia pozalekcyjne</a></li>
                             <li><a href="#">Organizacja roku</a></li>
@@ -105,9 +105,26 @@
                             <li><a href="#">Wolontariat</a></li>
                         </ul>
                     </li>
-                    <li><a href="./index.html">Kontakt</a></li>
-                    <li><a href="./index.html"><img src="./files/icons/icon-lupa.png" alt=""></a></li>
+                    <li><img src="./files/icons/icon-phone.png" class="navbarico"><a href="./index.html">Kontakt</a></li>
+                    <script>
+                        const icon = document.querySelector('.icon');
+                        const search = document.querySelector('search');
+                        icon.onclick = function(){
+                            search.classList.toggle('active')
+                        }
+                    </script>
+                    <li>
+                    <div class="search">
+                        <div class="lupa">
+                            <img src="./files/icons/icon-lupa.png">
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="Wyszukaj..." id="mysearch">
+                        </div>
+                    </div>   
+                    </li>
                 </ul>
+                
                 <div class="burger">
                     <div class="line1"></div>
                     <div class="line2"></div>
@@ -132,21 +149,21 @@
     <main class="center">
         <div class="mainBody">
             <div class="secondNav">
-                <a href="">
+                <a href="https://portal.librus.pl/rodzina">
                     <div class="secDivElement">
                         <img src="./files/icons/icon-librus.png" alt="">
                         <span>E-dziennik</span>
                     </div>
                 </a>
 
-                <a href="">
+                <a href="https://www.goszczynski.edupage.org/timetable">
                     <div class="secDivElement">
                         <img src="./files/icons/icon-timetable.png" alt="">
                         <span>Plan lekcji</span>
                     </div>
                 </a>
 
-                <a href="">
+                <a href="https://www.goszczynski.edupage.org/substitution">
                     <div class="secDivElement">
                         <img src="./files/icons/icon-replacements.png" alt="">
                         <span>Zastępstwa</span>

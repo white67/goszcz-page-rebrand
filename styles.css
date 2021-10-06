@@ -214,19 +214,6 @@ nav {
   transform: scale(0.93);
 }
 
-.burger {
-  display: none;
-  cursor: pointer;
-}
-
-.burger div {
-  width: 25px;
-  height: 5px;
-  background-color: #9a3231;
-  margin: 4px;
-  border-radius: 120px;
-}
-
 .mainNavButtons {
   display: flex;
   flex-direction: row;
@@ -237,36 +224,51 @@ nav {
   display: flex;
 }
 
-@media screen and (max-width: 1039px) {
-  body {
-    overflow-x: hidden;
-  }
+.navbarico {
+  display: none;
+}
 
-  .mainNavList {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 14.7vh; /*Może być uselles*/
-    background-color: #11c0a9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 28%;
-    transform: translateX(100%);
-    transition: transform 0.5 ease-in;
+@media screen and (max-width:1039px){
+  .burger div {
+    width: 25px;
+    height: 5px;
+    background-color: #9a3231;
+    margin: 4px;
+    border-radius: 120px;
   }
-
-  .mainNavList li {
-    opacity: 0;
+  nav {
+    position: relative;
   }
 
   .burger {
-    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -35%);
+    z-index: 2;
   }
-}
 
-.mainNavList-active {
-  transform: translateX(0%);
+  .mainNavList {
+    margin-left: -300px;
+    padding-left: 25px;
+    top: 14.5vh;
+    position: absolute;
+    background: #9a3231;
+    height: 75vh;
+    width: 100%;
+    flex-direction: column;
+    transform: translateX(100%);
+    pointer-events: none;
+  }
+  .mainNavList.open {
+    transform: translateX(5.5%);
+    transition: 0.5s ease-in;
+  }
+
+  .navbarico {
+    display: flex;
+  }
 }
 
 .mainNavList li {
@@ -350,6 +352,43 @@ nav {
 /* MAIN SECTION*/
 /* MAIN SECTION*/
 /* MAIN SECTION*/
+
+.search {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 0 0 2px #751312;
+  overflow: hidden;
+}
+
+.search:hover {
+  width: 150px;
+}
+
+.search .lupa {
+  position: relative;
+}
+
+.search .input {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  left: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .input input {
+  position: absolute;
+  top: 0.66vh;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  padding: 1px 0;
+}
 
 section {
   display: flex;
