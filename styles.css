@@ -9,6 +9,9 @@
   --normalgrey: #878787;
   --blendblue: #5b647c;
   --borderSize: 2px;
+  --logoYoutube: #ff0000;
+  --logoFacebook: #4267b2;
+  --logoInstagram: #8a3ab9;
 }
 
 * {
@@ -228,7 +231,7 @@ nav {
   display: none;
 }
 
-@media screen and (max-width:1039px){
+@media screen and (max-width: 1039px) {
   .burger div {
     width: 25px;
     height: 5px;
@@ -717,7 +720,6 @@ main {
   flex-wrap: wrap;
   color: var(--darkblue);
   justify-content: center;
-  border: var(--borderSize) solid green;
 }
 
 .footerMainLeft {
@@ -748,7 +750,7 @@ main {
 
 .ftrLeftContact {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: center;
   gap: 20px;
   color: var(--normalgrey);
@@ -783,7 +785,7 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   height: 100%;
-  padding: 40px;
+  padding: 45px;
 }
 
 .ftrRightText {
@@ -792,11 +794,19 @@ main {
 
 .ftrRightLogoSection {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
 }
 
-@media only screen and (max-width: 891px) {
+.ftrRightLogoSection div svg path {
+  fill: var(--normalgrey);
+}
+
+@media only screen and (max-width: 769px) {
   .footerMainLeft {
     border-right: none;
+    border-bottom: 1px solid var(--lightgrey);
   }
 }
 
