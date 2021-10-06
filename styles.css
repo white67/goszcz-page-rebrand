@@ -803,9 +803,27 @@ main {
   fill: var(--normalgrey);
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 777px) {
   .footerMainLeft {
     border-right: none;
     border-bottom: 1px solid var(--lightgrey);
+  }
+
+  .ftrRightText {
+    text-align: center;
+  }
+
+  .ftrLeftSchoolLogo {
+    display: none;
+  }
+  
+  .ftrLeftName {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .ftrLeftPhone {
+    display: none;
   }
 }
