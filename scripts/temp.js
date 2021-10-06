@@ -6,12 +6,12 @@ class AntyStopka extends HTMLElement {
             <div>
                 <div class="topContact">
                     <a href=""><div class="topConEmail">
-                        <img src="./files/icons/icon-email.png" alt="">
+                        <img src="../../files/icons/icon-email.png" alt="">
                         <span>lo@goszczynski.nowytarg.pl</span>
                     </div></a>
     
                     <a href=""><div class="topConPhone">
-                        <img src="./files/icons/icon-phone.png" alt="">
+                        <img src="../../files/icons/icon-phone.png" alt="">
                         <span>+18 26 62 955</span>
                     </div></a>
                 </div>
@@ -41,7 +41,7 @@ class AntyStopka extends HTMLElement {
     
                     <a href="">
                         <div class="topSetContrastBtn">
-                            <img src="./files/icons/icon-contrast.png" alt="">
+                            <img src="../../files/icons/icon-contrast.png" alt="">
                             <span>Zmień<br>Kontrast</span> 
                         </div>
                     </a>
@@ -61,14 +61,14 @@ class NavBar extends HTMLElement {
         this.innerHTML = `<nav>
         <div class="mainNav center">
             <div class="mainNavLogo">
-                <a href=""><img src="./files/icons/icon-goszcz-logo-red.png" alt=""></a>
+                <a href=""><img src="../../files/icons/icon-goszcz-logo-red.png" alt=""></a>
             </div>
 
             <div class="mainNavButtons">
                 <ul class="mainNavList">
-                    <li><a href="./index.html">Strona główna</a></li>
-                    <li><a href="./index.html">Aktualności</a></li>
-                    <li><a href="./index.html">Szkoła</a>
+                    <li><a href="../../index.html">Strona główna</a></li>
+                    <li><a href="../../index.html">Aktualności</a></li>
+                    <li><a href="../../index.html">Szkoła</a>
                             <ul class="drop">
                             <li><a href="#">Statut Szkoły</a></li>
                             <li><a href="#">Galeria</a></li>
@@ -82,8 +82,8 @@ class NavBar extends HTMLElement {
                             <li><a href="#">Wolontariat</a></li>
                         </ul>
                     </li>
-                    <li><a href="./index.html">Rekrutacja</a></li>
-                    <li><a href="./index.html">Dla Ucznia i Rodzica</a>
+                    <li><a href="../../index.html">Rekrutacja</a></li>
+                    <li><a href="../../index.html">Dla Ucznia i Rodzica</a>
                             <ul class="drop">
                             <li><a href="https://www.goszczynski.edupage.org/timetable">Plan lekcji</a></li>
                             <li><a href="https://portal.librus.pl/rodzina">E-dziennik Librus</a></li>
@@ -97,7 +97,7 @@ class NavBar extends HTMLElement {
                             <li><a href="#">Wolontariat</a></li>
                         </ul>
                     </li>
-                    <li><img src="./files/icons/icon-phone.png" class="navbarico"><a href="./index.html">Kontakt</a></li>
+                    <li><img src="../../files/icons/icon-phone.png" class="navbarico"><a href="./index.html">Kontakt</a></li>
                     <script>
                         const icon = document.querySelector('.icon');
                         const search = document.querySelector('search');
@@ -108,7 +108,7 @@ class NavBar extends HTMLElement {
                     <li>
                     <div class="search">
                         <div class="lupa">
-                            <img src="./files/icons/icon-lupa.png">
+                            <img src="../../files/icons/icon-lupa.png">
                         </div>
                         <div class="input">
                             <input type="text" placeholder="Wyszukaj..." id="mysearch">
@@ -137,7 +137,7 @@ class WielkaStopa extends HTMLElement {
             <div class="footerMainLeft">
                 <div class="ftrLeftSchoolName">
                     <div class="ftrLeftSchoolLogo">
-                        <img src="./files/icons/icon-goszcz-logo-darkblue.png" alt="">
+                        <img src="../../files/icons/icon-goszcz-logo-darkblue.png" alt="">
                     </div>
 
                     <div class="ftrLeftName">
@@ -148,7 +148,7 @@ class WielkaStopa extends HTMLElement {
                 <div class="ftrLeftContact">
                     <div class="ftrLeftLocation">
                         <div class="ftrLeftLocationLogo">
-                            <img src="./files/icons/icon-waypoint-grey.png" alt="">
+                            <img src="../../files/icons/icon-waypoint-grey.png" alt="">
                         </div>
 
                         <div class="ftrLeftLocationText">
@@ -158,7 +158,7 @@ class WielkaStopa extends HTMLElement {
 
                     <div class="ftrLeftPhone">
                         <div class="ftrLeftPhoneLogo">
-                            <img src="./files/icons/icon-phone-grey.png" alt="">
+                            <img src="../../files/icons/icon-phone-grey.png" alt="">
                         </div>
 
                         <div class="ftrLeftPhoneText">
