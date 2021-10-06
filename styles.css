@@ -237,35 +237,35 @@ nav {
   display: flex;
 }
 
-@media screen and (max-width:1039px){
-  body{
-     overflow-x: hidden;
-   }
-  
-  .mainNavList{
-     position: absolute;
-     right: 0px;
-     height: 92vh;
-     top: 14.7vh; /*Może być uselles*/
-     background-color: #11c0a9;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     width: 28%;
-     transform: translateX(100%);
-     transition: transform 0.5 ease-in;
-   }
+@media screen and (max-width: 1039px) {
+  body {
+    overflow-x: hidden;
+  }
 
-   .mainNavList li{
-     opacity: 0;
-   }
+  .mainNavList {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 14.7vh; /*Może być uselles*/
+    background-color: #11c0a9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28%;
+    transform: translateX(100%);
+    transition: transform 0.5 ease-in;
+  }
 
-   .burger{
-     display: block;
-   }
+  .mainNavList li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+  }
 }
 
-.mainNavList-active{
+.mainNavList-active {
   transform: translateX(0%);
 }
 
@@ -673,6 +673,95 @@ main {
 /* FOOTER */
 /* FOOTER */
 
+.footerMain {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--darkblue);
+  justify-content: center;
+  border: var(--borderSize) solid green;
+}
+
+.footerMainLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  align-content: right;
+  flex-wrap: wrap;
+  padding: 40px;
+  border: 1px solid var(--lightgrey);
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.ftrLeftSchoolName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+
+.ftrLeftSchoolLogo img {
+  height: 50px;
+}
+
+.ftrLeftContact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  color: var(--normalgrey);
+}
+
+.ftrLeftLocation {
+  display: flex;
+}
+
+.ftrLeftLocationLogo {
+  padding-right: 10px;
+}
+
+.ftrLeftLocation img {
+  height: 32px;
+}
+
+.ftrLeftPhone {
+  display: flex;
+}
+
+.ftrLeftPhoneLogo {
+  padding-right: 10px;
+}
+
+.ftrLeftPhone img {
+  height: 35px;
+}
+
+.footerMainRight {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 40px;
+}
+
+.ftrRightText {
+  padding-bottom: 20px;
+}
+
+.ftrRightLogoSection {
+  display: flex;
+}
+
+@media only screen and (max-width: 891px) {
+  .footerMainLeft {
+    border-right: none;
+  }
+}
+
+/*
 .footertop {
   display: flex;
   color: var(--darkblue);
@@ -684,9 +773,9 @@ main {
   width: 50%;
   border: 1px solid var(--lightgrey);
   border-top: none;
-  flex-direction: column;
   border-left: none;
   border-bottom: none;
+  flex-direction: column;
 }
 
 .nazwaszkoly {
@@ -698,7 +787,7 @@ main {
 }
 
 .nazwaszkoly img {
-  height: 60%;
+  height: 50%;
   margin-right: 3%;
 }
 
@@ -751,7 +840,7 @@ main {
   transform: scale(0.93);
 }
 
-.footerlista {
+.footerList {
   display: flex;
   color: black;
   height: 60px;
@@ -761,9 +850,10 @@ main {
   border-top: 1px solid var(--lightgrey);
 }
 
-.footergap {
+.footerGap {
   height: 40%;
   margin-left: 2%;
   margin-right: 2%;
   border-left: 1px solid var(--lightgrey);
 }
+*/
