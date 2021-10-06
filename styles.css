@@ -520,7 +520,7 @@ main {
   width: 100%;
   margin-top: -10%;
   background-color: white;
-  border-radius: 20px;
+
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
 }
 
@@ -531,6 +531,7 @@ main {
   flex-wrap: wrap;
   font-size: 20px;
   font-weight: 500;
+  border-radius: 10px;
   width: 100%;
 }
 
@@ -559,6 +560,51 @@ main {
 .secDivElement img {
   max-width: 50px;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 922px) {
+  .secDivElement {
+    padding: 20px 66px 20px 66px;
+  }
+
+  .secondNav {
+    font-size: 15px;
+  }
+
+  .secDivElement img {
+    max-width: 40px;
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .secDivElement {
+    padding: 15px 50px 15px 50px;
+  }
+
+  .secondNav {
+    font-size: 15px;
+  }
+
+  .secDivElement img {
+    max-width: 35px;
+    margin-bottom: 6px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .secDivElement {
+    padding: 15px 40px 15px 40px;
+  }
+
+  .secondNav {
+    font-size: 15px;
+  }
+
+  .secDivElement img {
+    max-width: 35px;
+    margin-bottom: 6px;
+  }
 }
 
 /* NEWS SECTION */
