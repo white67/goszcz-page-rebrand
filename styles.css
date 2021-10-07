@@ -413,6 +413,43 @@ nav {
 /* MAIN SECTION*/
 /* MAIN SECTION*/
 
+.search {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: var(--bgWhite);
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 0 0 2px #751312;
+  overflow: hidden;
+}
+
+.search:hover {
+  width: 150px;
+}
+
+.search .lupa {
+  position: relative;
+}
+
+.search .input {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  left: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .input input {
+  position: absolute;
+  top: 0.66vh;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  padding: 1px 0;
+}
+
 section {
   display: flex;
   background-image: url("./files/graphic/banner-nowy-targ.png"); /* The image used */
@@ -932,7 +969,7 @@ main {
 }
 
 .scrollToTopBtn {
-  background-color: white;
+  background-color: black;
   border: none;
   cursor: pointer;
   line-height: 65px;
