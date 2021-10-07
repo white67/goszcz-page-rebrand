@@ -803,6 +803,7 @@ main {
   flex-wrap: wrap;
   color: var(--darkblue);
   justify-content: center;
+  margin-top: 10px;
 }
 
 .footerMainLeft {
@@ -864,21 +865,21 @@ main {
   color: var(--normalgrey);
 }
 
-.ftrLeftLocation,
-.ftrLeftPhone,
-.ftrLeftEmail {
+.ftrLeftElement1,
+.ftrLeftElement2,
+.ftrLeftElement3 {
   display: flex;
 }
 
-.ftrLeftLocationLogo,
-.ftrLeftPhoneLogo,
-.ftrLeftEmailLogo {
+.ftrLeftElement1Logo,
+.ftrLeftElement2Logo,
+.ftrLeftElement3Logo {
   padding-right: 12px;
 }
 
-.ftrLeftPhoneLogo svg,
-.ftrLeftLocationLogo svg,
-.ftrLeftEmailLogo svg {
+.ftrLeftElement1Logo svg,
+.ftrLeftElement2Logo svg,
+.ftrLeftElement3Logo svg {
   height: 35px;
   width: 35px;
   fill: var(--normalgrey);
@@ -924,10 +925,18 @@ main {
 
 @media only screen and (max-width: 710px) {
   .ftrLeftContact {
-    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
     justify-content: center;
-    gap: 30px;
-    color: var(--normalgrey);
+  }
+
+  .footerMain {
+    flex-direction: column;
+  }
+
+  .ftrRightLogoSection {
+    justify-content: center;
   }
 }
 
