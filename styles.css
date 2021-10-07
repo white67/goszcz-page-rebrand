@@ -901,15 +901,21 @@ main {
   color: var(--normalgrey);
 }
 
-.ftrLeftLocation, .ftrLeftPhone, .ftrLeftEmail {
+.ftrLeftLocation,
+.ftrLeftPhone,
+.ftrLeftEmail {
   display: flex;
 }
 
-.ftrLeftLocationLogo, .ftrLeftPhoneLogo, .ftrLeftEmailLogo {
+.ftrLeftLocationLogo,
+.ftrLeftPhoneLogo,
+.ftrLeftEmailLogo {
   padding-right: 12px;
 }
 
-.ftrLeftPhoneLogo svg, .ftrLeftLocationLogo svg, .ftrLeftEmailLogo svg {
+.ftrLeftPhoneLogo svg,
+.ftrLeftLocationLogo svg,
+.ftrLeftEmailLogo svg {
   height: 35px;
   width: 35px;
   fill: var(--normalgrey);
