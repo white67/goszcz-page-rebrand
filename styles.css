@@ -888,6 +888,7 @@ main {
   height: 32px;
 }
 
+<<<<<<< HEAD
 .ftrLeftPhone {
   display: flex;
 }
@@ -897,6 +898,23 @@ main {
 }
 
 .ftrLeftPhone img {
+=======
+.ftrLeftLocation,
+.ftrLeftPhone,
+.ftrLeftEmail {
+  display: flex;
+}
+
+.ftrLeftLocationLogo,
+.ftrLeftPhoneLogo,
+.ftrLeftEmailLogo {
+  padding-right: 12px;
+}
+
+.ftrLeftPhoneLogo svg,
+.ftrLeftLocationLogo svg,
+.ftrLeftEmailLogo svg {
+>>>>>>> 8e5adf7ce32dd4f1d7ad87fe56f85feed77bb39e
   height: 35px;
 }
 
