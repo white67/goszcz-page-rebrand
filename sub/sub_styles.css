@@ -375,43 +375,6 @@
   /* MAIN SECTION*/
   /* MAIN SECTION*/
   
-  .search {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: white;
-    border-radius: 20px;
-    transition: 0.5s;
-    box-shadow: 0 0 0 2px #751312;
-    overflow: hidden;
-  }
-  
-  .search:hover {
-    width: 150px;
-  }
-  
-  .search .lupa {
-    position: relative;
-  }
-  
-  .search .input {
-    position: relative;
-    width: 100px;
-    height: 60px;
-    left: 40px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .search .input input {
-    position: absolute;
-    top: 0.66vh;
-    border: none;
-    outline: none;
-    font-size: 12px;
-    padding: 1px 0;
-  }
-  
   section {
     display: flex;
   
@@ -544,18 +507,15 @@
   }
 
   .mainSection { 
-    justify-content: left;
-    text-align: left;
-    float: left;
-    position: relative;
-    flex-wrap: nowrap;
-    display: grid;
-    width: 100%;
-    color: black;
-    font-size: 15px;
-    background-color: rgb(255, 255, 255);
-    opacity: 1;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: stretch;
+    padding: 40px;
+    gap: 3%;
+    justify-content: space-around;
+    font-weight: 500;
   }
 
   .mainSection a {
