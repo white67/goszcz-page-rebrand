@@ -241,8 +241,8 @@ header {
 }
 
 .nav-toggle-label {
-  position: absolute;
-  top: -400px;
+  position: static;
+  top: -310px;
   right: 20px;
   margin-left: 1em;
   height: 100%;
