@@ -242,13 +242,12 @@ header {
 
 .nav-toggle-label {
   position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 1em;
+  top: -400px;
+  right: 20px;
+  margin-left: 1em;
   height: 100%;
   display: flex;
   align-items: center;
-  padding-bottom: 780px;
 }
 
 .nav-toggle-label span,
@@ -258,7 +257,6 @@ header {
   background: #9a3231;
   height: 4px;
   width: 25px;
-  border-radius: 2px;
   position: relative;
   border-radius: 120px;
 }
@@ -278,18 +276,17 @@ header {
 }
 
 nav {
-  color: var(--darkblue);
   font-weight: 500;
-  background-color: var(--bgWhite);
-  /*position: absolute;*/
-  text-align: left;
-  top: 100%;
+  position: absolute;
+  text-align: right;
+  padding-right: 20px;
+  top: 12%;
   right: 0;
-  background: var(--background);
-  width: 70%;  
+  width: 80%;  
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
+  background: yellow;
 }
 
 
@@ -436,10 +433,6 @@ nav a:hover {
   color: var(--darkblue);
 }
 
-.menueList {
-  display: flex;
-}
-
 .navbarico {
   display: none;
 }
@@ -448,13 +441,11 @@ nav a:hover {
   list-style: none;
   position: relative;
   margin: 10px;
-  display: inline-block;
   color: var(--darkblue);
 }
 
 .menueList li > a {
   position: relative;
-  display: inline-block;
   text-decoration: none;
   padding: 0 10px;
   line-height: 35px;
