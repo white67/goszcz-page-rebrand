@@ -51,6 +51,19 @@ html {
 }
 */
 
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #878787;
+  border-radius: 10px;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -1040,6 +1053,12 @@ main {
   }
 }
 
+/* SCROLLBTN */
+/* SCROLLBTN */
+/* SCROLLBTN */
+/* SCROLLBTN */
+/* SCROLLBTN */
+
 .scrollToTopBtn {
   border: none;
   cursor: pointer;
@@ -1054,6 +1073,20 @@ main {
   opacity: 0;
   transform: translateY(100px);
   transition: all 0.5s ease;
+}
+
+@media only screen and (max-width: 965px) {
+  .scrollToTopBtn {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .scrollToTopBtn {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .showBtn {
