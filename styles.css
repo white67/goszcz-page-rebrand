@@ -286,7 +286,7 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
-  background: yellow;
+  background: darkred;
 }
 
 
@@ -310,7 +310,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #000;
+  color: white;
 }
 
 .nav-toggle:checked ~ nav {
