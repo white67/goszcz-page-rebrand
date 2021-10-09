@@ -131,11 +131,11 @@ customElements.define('sect-main', SectMain)
 class LogoBar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `<div class="logoSection">
-        <a href="" target="_blank"><img src="../../files/logo/logo-starostwo.png" alt=""></a>
-        <a href="" target="_blank"><img src="../../files/logo/logo-ore.png" alt=""></a>
-        <a href="" target="_blank"><img src="../../files/logo/logo-tarcza.png" alt=""></a>
-        <a href="" target="_blank"><img src="../../files/logo/logo-bip.png" alt=""></a>
-        <a href="" target="_blank"><img src="../../files/logo/logo-uek.png" alt=""></a>
+        <a href="http://www.nowotarski.pl/" target="_blank"><img src="../../files/logo/logo-starostwo.png" alt=""></a>
+        <a href="http://www.pore.nowotarski.pl/pl/" target="_blank"><img src="../../files/logo/logo-ore.png" alt=""></a>
+        <a href="http://www.licea.perspektywy.pl/" target="_blank"><img src="../../files/logo/logo-tarcza.png" alt=""></a>
+        <a href="https://www.nowotarski.pl/bip/struktura_powiatu/jednostki-powiatowe/zespol-szkol-ogolnoksztalcacych-nr-1-w-nowym-targu-10.html" target="_blank"><img src="../../files/logo/logo-bip.png" alt=""></a>
+        <a href="http://www.uek.krakow.pl/pl/uczelnia/inne-jedn-naukowo-dydaktyczne/zamiejscowe-osrodki-dydaktyczne/nowy-targ.html" target="_blank"><img src="../../files/logo/logo-uek.png" alt=""></a>
         </div>`
     }
 }
