@@ -645,6 +645,7 @@ nav a:hover {
     flex-wrap: nowrap;
     line-height: 25px;
     text-indent: 0.2em;
+    color: var(--red);
   }
 
   .mainSectionTitle {
@@ -697,6 +698,13 @@ nav a:hover {
     line-height: 25px;
   }
 
+  .mainSectionContent img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+  }
+
   /* Div równający content w sectionContencie
   
   .mainSectionContentText {
@@ -704,11 +712,33 @@ nav a:hover {
   }
   */
 
-  .mainSectionContent img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
+  .mainSectionContentGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .mainSectionContentGallery img {
+    display: inline;
+    height: 220px;
+    width: 320px; 
+  }
+
+  .galEl {
+    margin: 5px;
+    float: left;
+    padding-bottom: 10px;
+  }
+
+  .galDesc {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .galDesc a {
+    color: black;
   }
 
 /* LOGO SECTION */
