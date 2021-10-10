@@ -239,7 +239,7 @@ nav{
   float: right;
   color: white;
   font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
   text-align: left;
   z-index: 999;
@@ -263,7 +263,7 @@ nav ul li a{
   padding: 8px 15px;
 }
 nav ul li a:hover{
-  color: #878787;
+  color: var(--red);
   border-radius: 5px;
 }
 nav ul ul li a:hover{
@@ -292,7 +292,7 @@ nav ul ul li{
   width: 213px;
   float: none;
   display: list-item;
-  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(135, 135, 135, 0.2);
 }
 
 nav ul ul li a{
