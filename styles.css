@@ -228,14 +228,16 @@ header {
   z-index: 999;
   width: 100%;
   height: 103px;
+  border-bottom: 1px solid var(--iconWhite);
 }
 
-nav:after{
-  content: '';
+nav:after {
+  content: "";
   clear: both;
   display: table;
 }
-nav{
+
+nav {
   float: right;
   color: white;
   font-family: "Ubuntu", sans-serif;
@@ -244,16 +246,19 @@ nav{
   text-align: left;
   z-index: 999;
 }
-nav ul{
+
+nav ul {
   float: right;
   list-style: none;
   position: relative;
 }
-nav ul li{
+
+nav ul li {
   display: inline-block;
   background: white;
 }
-nav ul li a{
+
+nav ul li a {
   color: #182546;
   line-height: 50px;
   text-decoration: none;
@@ -262,31 +267,36 @@ nav ul li a{
   font-size: 15px;
   padding: 8px 15px;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
   color: var(--red);
   border-radius: 5px;
 }
-nav ul ul li a:hover{
+
+nav ul ul li a:hover {
   box-shadow: none;
 }
-nav ul ul{
+
+nav ul ul {
   position: absolute;
   top: 90px;
   border-top: 3px solid #9a3231;
   opacity: 0;
   visibility: hidden;
-  transition: top .3s;
+  transition: top 0.3s;
 }
-nav ul ul ul{
+
+nav ul ul ul {
   border-top: none;
 }
-nav ul li:hover > ul{
+
+nav ul li:hover > ul {
   top: 50px;
   opacity: 1;
   visibility: visible;
 }
 
-nav ul ul li{
+nav ul ul li {
   position: relative;
   margin: 0px;
   width: 213px;
@@ -295,30 +305,35 @@ nav ul ul li{
   border-bottom: 1px solid rgba(135, 135, 135, 0.2);
 }
 
-nav ul ul li a{
+nav ul ul li a {
   line-height: 40px;
 }
-nav ul ul ul li{
+
+nav ul ul ul li {
   position: relative;
   top: -60px;
   right: 150px;
 }
-.show,.icon,input{
+
+.show,
+.icon,
+input {
   display: none;
 }
-.fa-plus{
+
+.fa-plus {
   font-size: 15px;
   margin-right: 40px;
 }
 
 @media all and (max-width: 933px) {
-  nav ul{
+  nav ul {
     margin-right: 0px;
     float: right;
     text-align: right;
   }
 
-    .thinnerfont {
+  .thinnerfont {
     color: #182546;
     text-decoration: none;
     font-family: "Ubuntu", sans-serif;
@@ -331,20 +346,22 @@ nav ul ul ul li{
     width: 100%;
     padding-top: 0px;
   }
-  .show + a, ul{
+  .show + a,
+  ul {
     display: none;
   }
-  nav ul li,nav ul ul li{
+  nav ul li,
+  nav ul ul li {
     display: block;
     width: 250px;
   }
-  nav ul li a:hover{
+  nav ul li a:hover {
     box-shadow: none;
   }
-  .show{
+  .show {
     display: block;
-    padding: 8px 15px;	
-	  color: #182546;
+    padding: 8px 15px;
+    color: #182546;
     line-height: 50px;
     text-decoration: none;
     font-family: "Ubuntu", sans-serif;
@@ -352,7 +369,7 @@ nav ul ul ul li{
     font-size: 15px;
     cursor: pointer;
   }
-  .icon{
+  .icon {
     display: block;
     color: #9a3231;
     position: absolute;
@@ -362,7 +379,7 @@ nav ul ul ul li{
     cursor: pointer;
     font-size: 25px;
   }
-  nav ul ul{
+  nav ul ul {
     top: 70px;
     border-top: 0px;
     float: none;
@@ -371,23 +388,23 @@ nav ul ul ul li{
     opacity: 1;
     visibility: visible;
   }
-  nav ul ul a{
+  nav ul ul a {
     padding-right: 40px;
   }
-  nav ul ul ul a{
+  nav ul ul ul a {
     padding-right: 80px;
   }
-  nav ul ul ul li{
+  nav ul ul ul li {
     position: static;
   }
-  [id^=btn]:checked + ul{
+  [id^="btn"]:checked + ul {
     display: block;
   }
-  nav ul ul li{
+  nav ul ul li {
     border-bottom: 0px;
   }
-  span.cancel:before{
-    content: '\f00d';
+  span.cancel:before {
+    content: "\f00d";
   }
 }
 
@@ -398,20 +415,20 @@ nav ul ul ul li{
 }
 
 @media all and (max-width: 900px) {
-    nav {
+  nav {
     padding-top: 10px;
   }
 }
 
 @media all and (max-width: 700px) {
   nav {
-  padding-top: 20px;
+    padding-top: 20px;
   }
 }
 
 @media all and (max-width: 500px) {
   nav {
-  padding-top: 30px;
+    padding-top: 30px;
   }
 }
 
@@ -675,6 +692,7 @@ main {
   margin-top: -10%;
   background-color: var(--bgWhite);
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+  border-top: 1px solid var(--iconWhite);
 }
 
 .secondNav {
@@ -802,10 +820,9 @@ main {
 }
 
 .smallLine {
-  height: 2px;
   width: 50%;
   margin: 40px 40px 20px 40px;
-  background-color: var(--lightgrey);
+  border: 1px solid var(--lightgrey);
 }
 
 .newsSection {
@@ -882,6 +899,7 @@ main {
   margin-bottom: 30px;
   color: var(--fontWhite);
   background-color: var(--red);
+  border: 1px solid var(--iconWhite);
 }
 
 .newsSectionShowAll:hover {
@@ -906,6 +924,8 @@ main {
   gap: 40px 40px;
   justify-content: space-evenly;
   background-color: var(--blendblue);
+  border-top: 1px solid var(--iconWhite);
+  border-bottom: 1px solid var(--iconWhite);
 }
 
 .logoSection a {
