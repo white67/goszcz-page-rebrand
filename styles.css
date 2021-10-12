@@ -326,7 +326,6 @@ nav ul ul ul li {
 }
 
 .show,
-.icon,
 input {
   display: none;
 }
@@ -379,15 +378,62 @@ input {
     font-size: 15px;
     cursor: pointer;
   }
+  label.icon{
+    height: 80px;
+    align-items: center;
+    margin-top: -90px;
+  }
   .icon {
-    display: block;
-    color: #9a3231;
-    position: absolute;
-    top: 52px;
-    right: 40px;
-    line-height: 70px;
+    position: static;
+    display: flex;
+    width: 45px;
+    height: 80px;
     cursor: pointer;
-    font-size: 25px;
+    float: right;
+  }
+  .menu-btn__burger {
+    width: 30px;
+    height: 5px;
+    background: #9a3231;
+    border-radius: 90px;
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background: #9a3231;
+    border-radius: 90px;
+    transition: all .5s ease-in-out;
+  }
+
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background: #9a3231;
+    border-radius: 90px;
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-12px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(12px);
+  }
+  /* ANIMATION */
+  .icon.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .icon.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .icon.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
   }
   nav ul ul {
     top: 70px;
@@ -412,9 +458,6 @@ input {
   }
   nav ul ul li {
     border-bottom: 0px;
-  }
-  span.cancel:before {
-    content: "\f00d";
   }
 }
 
