@@ -247,6 +247,13 @@ nav {
   z-index: 999;
 }
 
+/* link na całym kafelku */
+nav a {
+  display: block;
+  line-height: 25px;
+}
+
+
 nav ul {
   float: right;
   list-style: none;
@@ -258,6 +265,7 @@ nav ul li {
   background: white;
 }
 
+/* lineheight bocznego navu */
 nav ul li a {
   color: #182546;
   line-height: 50px;
@@ -284,6 +292,7 @@ nav ul ul {
   opacity: 0;
   visibility: hidden;
   transition: top 0.3s;
+  margin-top: 6px;
 }
 
 nav ul ul ul {
@@ -305,8 +314,9 @@ nav ul ul li {
   border-bottom: 1px solid rgba(135, 135, 135, 0.2);
 }
 
+/* lineheight menu rozwijanego */
 nav ul ul li a {
-  line-height: 40px;
+  line-height: 25px;
 }
 
 nav ul ul ul li {
