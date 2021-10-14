@@ -328,12 +328,6 @@ nav ul ul li a {
   line-height: 25px;
 }
 
-nav ul ul ul li {
-  position: relative;
-  top: -60px;
-  right: 150px;
-}
-
 .show,
 input {
   display: none;
@@ -350,26 +344,36 @@ input {
 933 PX
 */
 
+.arrow{
+  display: none;
+}
 
-@media all and (max-width: 933px) {
+@media all and (max-width: 970px) {
   nav ul {
-    margin-right: -30px;
+    margin-right: -27px;
     float: right;
-    text-align: right;
+    text-align: center;
   }
 
   .thinnerfont {
+    margin-left: 15px;
     color: #182546;
     text-decoration: none;
     font-family: "Ubuntu", sans-serif;
     font-weight: 600;
     font-size: 100%;
+    text-align: center;
   }
 
   nav {
     padding-right: 0px;
     width: 100%;
     padding-top: 10px;
+  }
+
+  nav ul li:hover > ul {
+    display: block;
+    width: 0px;
   }
 
   .show + a,
@@ -381,7 +385,7 @@ input {
   nav ul li,
   nav ul ul li {
     display: block;
-    width: 250px;
+    width: 300px
   }
 
   nav ul li a:hover {
@@ -499,6 +503,15 @@ input {
   nav ul ul li {
     border-bottom: 0px;
   }
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
 }
 
 .menueLogo {
@@ -509,7 +522,7 @@ input {
   padding-right: 70px;
 }
 
-@media all and (max-width: 933px) {
+@media all and (max-width: 980px) {
   label.icon{
     height: 80px;
     align-items: center;
