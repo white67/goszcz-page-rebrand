@@ -12,13 +12,13 @@ html {
   --darkblue2: rgba(24, 37, 70, 0.75);
   --normalgrey: #878787;
   --blendblue: #5b647c;
-  --borderSize: 2px;
   --logoYoutube: #ff0000;
   --logoFacebook: #4267b2;
   --logoInstagram: #8a3ab9;
   --bgWhite: white;
   --fontWhite: white;
   --iconWhite: white;
+  --burger: #9a3231;
 }
 
 * {
@@ -339,6 +339,10 @@ input {
 933 PX
 */
 
+.menu-btn__burger {
+  background-color: pink;
+}
+
 @media all and (max-width: 933px) {
   nav ul {
     margin-right: -30px;
@@ -408,11 +412,12 @@ input {
   }
 
   .menu-btn__burger {
+    content: "";
     width: 30px;
     height: 5px;
-    background: #9a3231;
+    background-color: var(--burger);
     border-radius: 90px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .menu-btn__burger::before {
@@ -420,9 +425,9 @@ input {
     position: absolute;
     width: 30px;
     height: 5px;
-    background: #9a3231;
+    background-color: var(--burger);
     border-radius: 100px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .menu-btn__burger::after {
@@ -430,9 +435,9 @@ input {
     position: absolute;
     width: 30px;
     height: 5px;
-    background: #9a3231;
+    background-color: var(--burger);
     border-radius: 90px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .menu-btn__burger::before {
