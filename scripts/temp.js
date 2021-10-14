@@ -14,7 +14,7 @@ class AntyStopka extends HTMLElement {
                         <span>lo@goszczynski.nowytarg.pl</span>
                     </div></a>
     
-                    <a href=""><div class="topConPhone">
+                    <a href="tel:0048182662955"><div class="topConPhone">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.09 178.68"><path d="M174.7,161.67l-8.06,7.59a45.26,45.26,0,0,1-11.29,6.39,46.1,46.1,0,0,1-11.53,2.89c-1.8.2-43.63,4.12-95.53-47.78C10.75,93.21-3.09,65.54.56,35.27A47.36,47.36,0,0,1,3.42,23.78,44.92,44.92,0,0,1,9.85,12.45l7.58-8C23.14-1.31,32.26-1.48,37.76,4L65.42,31.68A14.41,14.41,0,0,1,65.05,52l-4.6,4.6L51.1,66c.48.85,1,1.75,1.5,2.69,4.89,8.8,11.58,20.86,24.28,33.57s24.72,19.37,33.52,24.24l2.75,1.53,13.93-13.93c5.7-5.7,14.83-5.87,20.33-.38l27.66,27.66A14.42,14.42,0,0,1,174.7,161.67Z"/></svg>
                         <span>+18 26 62 955</span>
                     </div></a>
@@ -42,9 +42,9 @@ class AntyStopka extends HTMLElement {
                             </div>
                         </a>
                     </div>
-    
-                    <a href="">
-                        <div class="topSetContrastBtn">
+
+                    <a href="#header">
+                        <div class="topSetContrastBtn" onclick="changeContrast()">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.09 179.09"><path d="M89.54,0a89.55,89.55,0,1,0,89.55,89.54A89.54,89.54,0,0,0,89.54,0Zm0,167.09a77.55,77.55,0,1,1,77.55-77.55A77.64,77.64,0,0,1,89.54,167.09Zm59.53-77.55A59,59,0,0,1,48.06,131l83.46-83.46A58.84,58.84,0,0,1,149.07,89.54Z"/></svg>
                             <span>Zmień<br>kontrast</span> 
                         </div>
@@ -66,45 +66,53 @@ class NavBar extends HTMLElement {
         <div class="menueLogo">
             <a href="../../index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 362.35 399.79"><path d="M249.61,235.84H333v22.89H249.5s-68.33,7.63-68.33,76.84c0-69.57-68.55-76.84-68.55-76.84H29.39V235.84h83.34s68.44,5.73,68.44,73.45C181.17,241.56,249.61,235.84,249.61,235.84ZM181.17,348.1c0-67.72-68.55-83.39-68.55-83.39H62.42V399.79H299.93V264.71H249.5S181.17,280.37,181.17,348.1ZM362.35,202.34v27.54H249.61s-68.44-2.32-68.44,66.89c0-69.57-68.44-66.89-68.44-66.89H0V202.34H62.42V118.76a118.76,118.76,0,1,1,237.51,0v83.58Zm-88.17,0V112.67H274a93,93,0,0,0-185.57,0h-.22v89.67h26.57c9.53.31,50.87-2.49,66.43,62.51,15.57-63.07,53.91-61.91,65.23-62.51ZM135.49,89.94l-11.77,7.92,2.48,4L133.51,97v31.46H139V89.94Zm25,25.41a10,10,0,0,0,2.36-.28l-9.51,13.37h6.21l10.17-14.8c1.43-2.09,4.35-5.94,4.35-11.33,0-7-5.17-13-13.58-13s-13.53,6-13.53,13C147,110.12,153,115.35,160.52,115.35Zm0-21.17a8.14,8.14,0,1,1-8.14,8.13A7.93,7.93,0,0,1,160.52,94.18Zm33.55-4.9c-11.06,0-15,10.23-15,19.91s4,20,15,20,15-10.28,15-20S205.12,89.28,194.07,89.28Zm0,34.7c-7.37,0-9.52-8.19-9.52-14.79s2.15-14.79,9.52-14.79,9.51,8.19,9.51,14.79S201.43,124,194.07,124Zm48.67-9.07h-5v-25h-7.86L213.76,115.4v4.4h18.47v8.64h5.5V119.8h5Zm-22.93,0,12.42-19.58v19.58Z"/></svg></a>
         </div>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
-            <ul class="menueList">
+            <label for="btn" class="icon">
+                <div class="menu-btn__burger"></div>
+            </label>
+            <script src="scripts/burger.js"></script>
+
+            <input type="checkbox" id="btn">
+            <ul>
                 <li><a href="../../index.html">Strona główna</a></li>
-                <li><a href="../../index.html">Aktualności</a></li>
-                <li><a href="#">Szkoła</a>
-                        <ul class="drop">
-                        <li><a href="https://goszczynski.nowotarski.edu.pl/pliki/statut_szkoly.pdf">Statut Szkoły</a></li>
-                        <li><a href="../szkola/galeria.html">Galeria</a></li>
-                        <li><a href="../szkola/kadra.html">Kadra</a></li>
-                        <li><a href="../szkola/kontakt.html">Sekretariat</a></li>
-                        <li><a href="../szkola/radarodzicow.html">Rada Rodziców</a></li>
-                        <li><a href="../szkola/samorzad.html">Samorząd Szkolny</a></li>
-                        <li><a href="../szkola/klasy.html">Klasy</a></li>
-                        <li><a href="../szkola/pedagog.html">Pedagog</a></li>
-                        <li><a href="../szkola/biblioteka.html">Biblioteka</a></li>
-                        <li><a href="../szkola/wolontariat.html">Wolontariat</a></li>
-                    </ul>
+                <li><a href="#">Aktualności</a></li>
+                <li>
+                <label for="btn-1" class="show">Szkoła ></label>
+                <a href="#">Szkoła</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="https://goszczynski.nowotarski.edu.pl/pliki/statut_szkoly.pdf" class="thinnerfont">Statut Szkoły</a></li>
+                    <li><a href="../szkola/galeria.html" class="thinnerfont">Galeria</a></li>
+                    <li><a href="../szkola/kadra.html" class="thinnerfont">Kadra</a></li>
+                    <li><a href="../szkola/kontakt.html" class="thinnerfont">Sekretariat</a></li>
+                    <li><a href="../szkola/radarodzicow.html" class="thinnerfont">Rada Rodziców</a></li>
+                    <li><a href="../szkola/samorzad.html" class="thinnerfont">Samorząd Szkolny</a></li>
+                    <li><a href="../szkola/klasy.html" class="thinnerfont">Klasy</a></li>
+                    <li><a href="../szkola/pedagog.html" class="thinnerfont">Pedagog</a></li>
+                    <li><a href="../szkola/biblioteka.html" class="thinnerfont">Biblioteka</a></li>
+                    <li><a href="../szkola/wolontariat.html" class="thinnerfont">Wolontariat</a></li>
+                </ul>
                 </li>
                 <li><a href="../dlaucznia/rekrutacja.html">Rekrutacja</a></li>
-                <li><a href="#">Dla Ucznia i Rodzica</a>
-                        <ul class="drop">
-                        <li><a href="https://www.goszczynski.edupage.org/timetable">Plan lekcji</a></li>
-                        <li><a href="https://portal.librus.pl/rodzina">E-dziennik Librus</a></li>
-                        <li><a href="https://www.goszczynski.edupage.org/substitution">Zastępstwa</a></li>
-                        <li><a href="../dlaucznia/matura.html">Matura</a></li>
-                        <li><a href="../dlaucznia/zajecia-pozalekcyjne.html">Zajęcia pozalekcyjne</a></li>
-                        <li><a href="../dlaucznia/organizacja.html">Organizacja roku</a></li>
-                        <li><a href="../dlaucznia/wykaz-podrecznikow.html">Wykaz podręczników</a></li>
-                        <li><a href="../dlaucznia/ubezpieczenie.html">Dodatkowe ubezpieczenie uczniów</a></li>
-                        <li><a href="../dlaucznia/dokumenty.html">Dokumenty/druki</a></li>
-                    </ul>
+                <li>
+                <label for="btn-2" class="show">Dla Ucznia i Rodzica ></label>
+                <a href="#">Dla Ucznia i Rodzica</a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                    <li><a href="https://www.goszczynski.edupage.org/timetable" class="thinnerfont">Plan lekcji</a></li>
+                    <li><a href="https://portal.librus.pl/rodzina" class="thinnerfont">E-dziennik Librus</a></li>
+                    <li><a href="https://www.goszczynski.edupage.org/substitution" class="thinnerfont">Zastępstwa</a></li>
+                    <li><a href="../dlaucznia/matura.html" class="thinnerfont">Matura</a></li>
+                    <li><a href="../dlaucznia/zajecia-pozalekcyjne.html" class="thinnerfont">Zajęcia pozalekcyjne</a></li>
+                    <li><a href="../dlaucznia/organizacja.html" class="thinnerfont">Organizacja roku</a></li>
+                    <li><a href="../dlaucznia/wykaz-podrecznikow.html" class="thinnerfont">Wykaz podręczników</a></li>
+                    <li><a href="../dlaucznia/ubezpieczenie.html" class="thinnerfont">Dodatkowe ubezpieczenie</a></li>
+                    <li><a href="../dlaucznia/dokumenty.html" class="thinnerfont">Dokumenty/druki</a></li>
+                </ul>
                 </li>
-                <li><img src="../../files/icons/icon-phone.png" class="navbarico"><a href="../szkola/kontakt.html">Kontakt</a></li>
+                <li><a href="../szkola/kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-            </label>
     </div>`
     }
 }
@@ -141,6 +149,21 @@ class LogoBar extends HTMLElement {
 }
 
 customElements.define('logo-bar', LogoBar)
+
+/* nie działa hurr durr
+class ScrollButton extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `<main>
+		<div class="scrollToTopBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 328"><path class="cls-1" d="M164,0A164,164,0,1,0,328,164,164,164,0,0,0,164,0Zm62.61,133.64a13.5,13.5,0,0,1-19.06,1.12L177.5,108V251a13.5,13.5,0,0,1-27,0V108l-30,26.72a13.5,13.5,0,0,1-17.94-20.18L155,67.89c.06,0,.12-.09.18-.15l.45-.36c.13-.1.25-.21.38-.3l.24-.17.44-.29.44-.28.25-.14.46-.24.45-.23.27-.12.49-.2.44-.17.31-.1.51-.15.43-.12.34-.07.5-.1.44-.07.37,0,.48,0,.44,0h1.31l.45,0,.48,0,.37,0,.44.08.51.1.32.07.45.13.5.14.3.1.45.18.49.19.27.12c.15.07.3.16.46.23l.45.24.25.14.44.28c.15.1.3.19.44.3l.24.16c.13.09.25.2.38.3l.45.36c.06.06.12.1.18.15l52.52,46.69a13.5,13.5,0,0,1,1.12,19.06Z"/></svg>
+        </div>
+		<script src="../../scripts/scrollingbut.js"></script>
+	</main>`
+    }
+}
+
+customElements.define('scroll-button', ScrollButton)
+*/
 
 /* musi być wielkastopa bo nazwy web componentów muszą być dwuczłonowe */
 class WielkaStopa extends HTMLElement {
