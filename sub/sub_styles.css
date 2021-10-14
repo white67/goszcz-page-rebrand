@@ -207,148 +207,262 @@ header {
   height: 103px;
 }
 
-.nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
-.nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(lightblue, .75);
-}
-
-.nav-toggle-label {
-  position: static;
-  top: -310px;
-  right: 20px;
-  margin-left: 1em;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: #9a3231;
-  height: 4px;
-  width: 25px;
-  position: relative;
-  border-radius: 120px;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: '';
-  position: absolute;
-}
-
-.nav-toggle-label span::before {
-  bottom: 8px;
-}
-
-.nav-toggle-label span::after {
-  top: 8px;
+nav:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 nav {
+  float: right;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 500;
-  position: absolute;
-  text-align: right;
-  padding-right: 20px;
-  top: 12%;
-  right: 0;
-  width: 80%;  
-  transform: scale(1, 0);
-  transform-origin: top;
-  transition: transform 400ms ease-in-out;
-  background: yellow;
-  z-index: 100;
+  font-size: 15px;
+  text-align: left;
+  z-index: 999;
 }
 
+/* link na całym kafelku */
+nav a {
+  display: block;
+  line-height: 25px;
+}
 
 nav ul {
-  margin: 0;
-  padding: 0;
+  float: right;
   list-style: none;
+  position: relative;
 }
 
-nav li {
-  margin-bottom: 1em;
-  margin-left: 1em;
+nav ul li {
+  display: inline-block;
+  background: white;
 }
 
-nav a {
-  color: white;
+/* lineheight bocznego navu */
+nav ul li a {
+  color: #182546;
+  line-height: 50px;
   text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
   font-size: 15px;
+  padding: 8px 15px;
+}
+
+nav ul li a:hover {
+  color: var(--red);
+  border-radius: 5px;
+}
+
+nav ul ul li a:hover {
+  box-shadow: none;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid #9a3231;
   opacity: 0;
-  transition: opacity 150ms ease-in-out;
+  visibility: hidden;
+  transition: top 0.3s;
+  margin-top: 6px;
 }
 
-nav a:hover {
-  color: #000;
+nav ul ul ul {
+  border-top: none;
 }
 
-.nav-toggle:checked ~ nav {
-  transform: scale(1,1);
-}
-
-.nav-toggle:checked ~ nav a {
+nav ul li:hover > ul {
+  top: 50px;
   opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
+  visibility: visible;
 }
 
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 213px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(135, 135, 135, 0.2);
+}
 
-@media screen and (min-width: 1039px) {
-  .nav-toggle-label {
-    display: none;
-  }
-  
-  nav {
-    position: relative;
-    text-align: left;
-    transition: none;
-    transform: scale(1,1);
-    background: none;
-    top: initial;
-    left: initial;    
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
+/* lineheight menu rozwijanego */
+nav ul ul li a {
+  line-height: 25px;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  right: 150px;
+}
+
+.show,
+input {
+  display: none;
+}
+
+.fa-plus {
+  font-size: 15px;
+  margin-right: 40px;
+}
+
+/*
+933 PX
+933 PX
+933 PX
+*/
+
+@media all and (max-width: 933px) {
   nav ul {
-    display: flex;
+    margin-right: -30px;
+    float: right;
+    text-align: right;
   }
-  
-  nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
+
+  .thinnerfont {
+    color: #182546;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
   }
-  
-  nav a {
-    opacity: 1;
-    position: relative;
+
+  nav {
+    padding-right: 0px;
+    width: 100%;
+    padding-top: 10px;
   }
-  
-  nav a::before {
-    content: '';
+
+  .show + a,
+  ul {
+    display: none;
+    margin-top: -10px;
+  }
+
+  nav ul li,
+  nav ul ul li {
     display: block;
-    height: 5px;
-    background: black;
-    position: absolute;
-    top: -.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
+    width: 250px;
   }
-  
-  nav a:hover::before {
-    transform: scale(1,1);
+
+  nav ul li a:hover {
+    box-shadow: none;
+  }
+
+  .show {
+    display: block;
+    padding: 8px 15px;
+    color: #182546;
+    line-height: 50px;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  label.icon {
+    height: 80px;
+    align-items: center;
+    margin-top: -90px;
+  }
+
+  .icon {
+    position: static;
+    display: flex;
+    width: 45px;
+    height: 80px;
+    cursor: pointer;
+    float: right;
+  }
+
+  nav ul li a {
+    font-weight: 600;
+  }
+
+  .menu-btn__burger {
+    width: 30px;
+    height: 5px;
+    background: #9a3231;
+    border-radius: 90px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn__burger::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background: #9a3231;
+    border-radius: 100px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background: #9a3231;
+    border-radius: 90px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-btn__burger::before {
+    transform: translateY(-12px);
+  }
+
+  .menu-btn__burger::after {
+    transform: translateY(12px);
+  }
+
+  /* ANIMATION */
+  .icon.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .icon.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .icon.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  nav ul ul {
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  nav ul ul a {
+    padding-right: 40px;
+  }
+
+  nav ul ul ul a {
+    padding-right: 80px;
+  }
+
+  nav ul ul ul li {
+    position: static;
+  }
+
+  [id^="btn"]:checked + ul {
+    display: block;
+  }
+
+  nav ul ul li {
+    border-bottom: 0px;
   }
 }
 
@@ -356,6 +470,14 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   padding-right: 70px;
+}
+
+@media all and (max-width: 933px) {
+  label.icon{
+    height: 80px;
+    align-items: center;
+    margin-top: -100px;
+  }
 }
 
 .menueLogo svg {
@@ -369,6 +491,13 @@ nav a:hover {
   .menueLogo svg {
     width: 70px;
     height: 70px;
+    padding-top: 10%;
+  }
+
+  label.icon{
+    height: 80px;
+    align-items: center;
+    margin-top: -90px;
   }
 }
 
@@ -376,13 +505,13 @@ nav a:hover {
   .menueLogo svg {
     width: 60px;
     height: 60px;
+    padding-top: 20%;
   }
-}
 
-@media only screen and (max-width: 500px) {
-  .menueLogo svg {
-    width: 50px;
-    height: 50px;
+  label.icon{
+    height: 80px;
+    align-items: center;
+    margin-top: -87px;
   }
 }
 
@@ -409,10 +538,6 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   color: var(--darkblue);
-}
-
-.navbarico {
-  display: none;
 }
 
 .menueList li {
@@ -483,7 +608,7 @@ nav a:hover {
 .menueList img {
   max-width: 15px;
 }
-  
+
   /* MAIN SECTION*/
   /* MAIN SECTION*/
   /* MAIN SECTION*/
@@ -732,13 +857,16 @@ nav a:hover {
     padding-bottom: 10px;
   }
 
+  .galPh:hover {
+    -o-transform: scale(0.9672);
+    -webkit-transform: scale(0.9672);
+    -ms-transform: scale(0.9672);
+    transform: scale(0.9672);
+  }
+
   .galDesc {
     padding: 5px;
     text-align: center;
-  }
-
-  .galDesc a {
-    color: black;
   }
 
 /* LOGO SECTION */
@@ -948,6 +1076,17 @@ nav a:hover {
   opacity: 0;
   transform: translateY(100px);
   transition: all 0.5s ease;
+  background: none !important;
+}
+
+.scrollToTopBtn svg path {
+  fill: var(--red);
+  background: none !important;
+}
+
+.scrollToTopBtn svg {
+  fill: var(--red);
+  background: none !important;
 }
 
 @media only screen and (max-width: 965px) {
