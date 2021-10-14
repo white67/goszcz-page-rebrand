@@ -154,7 +154,7 @@ header {
 
 .topSettings {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   width: 100%;
 }
 
@@ -165,12 +165,25 @@ header {
   transition: background-color 200ms linear;
 }
 
-.topSetContrastLetters {
+.topSettingsLetters {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 450;
+  font-size: 110%;
+  width: 100px;
+}
+
+.topSetContrastLetter {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  align-content: center;
-  font-size: 120%;
-  font-weight: 500;
+  width: 40px;
+}
+
+.topSetContrastLetter:hover {
+  background-color: var(--darkred);
+  cursor: pointer;
 }
 
 .topSetContrastBtn {
