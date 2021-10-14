@@ -339,9 +339,6 @@ input {
 933 PX
 */
 
-.menu-btn__burger {
-  background-color: pink;
-}
 
 @media all and (max-width: 933px) {
   nav ul {
