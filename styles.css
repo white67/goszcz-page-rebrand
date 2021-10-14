@@ -228,7 +228,6 @@ header {
   z-index: 999;
   width: 100%;
   height: 103px;
-  border-bottom: 1px solid var(--iconWhite);
 }
 
 nav:after {
@@ -252,7 +251,6 @@ nav a {
   display: block;
   line-height: 25px;
 }
-
 
 nav ul {
   float: right;
@@ -361,19 +359,23 @@ input {
     width: 100%;
     padding-top: 10px;
   }
+
   .show + a,
   ul {
     display: none;
     margin-top: -10px;
   }
+
   nav ul li,
   nav ul ul li {
     display: block;
     width: 250px;
   }
+
   nav ul li a:hover {
     box-shadow: none;
   }
+
   .show {
     display: block;
     padding: 8px 15px;
@@ -385,11 +387,13 @@ input {
     font-size: 15px;
     cursor: pointer;
   }
-  label.icon{
+
+  label.icon {
     height: 80px;
     align-items: center;
     margin-top: -90px;
   }
+
   .icon {
     position: static;
     display: flex;
@@ -398,8 +402,8 @@ input {
     cursor: pointer;
     float: right;
   }
-  
-  nav ul li a {    
+
+  nav ul li a {
     font-weight: 600;
   }
 
@@ -408,45 +412,52 @@ input {
     height: 5px;
     background: #9a3231;
     border-radius: 90px;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
-  .menu-btn__burger::before{
-    content: '';
+
+  .menu-btn__burger::before {
+    content: "";
     position: absolute;
     width: 30px;
     height: 5px;
     background: #9a3231;
     border-radius: 90px;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   .menu-btn__burger::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 30px;
     height: 5px;
     background: #9a3231;
     border-radius: 90px;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
+
   .menu-btn__burger::before {
     transform: translateY(-12px);
   }
+
   .menu-btn__burger::after {
     transform: translateY(12px);
   }
+
   /* ANIMATION */
   .icon.open .menu-btn__burger {
     transform: translateX(-50px);
     background: transparent;
     box-shadow: none;
   }
+
   .icon.open .menu-btn__burger::before {
     transform: rotate(45deg) translate(35px, -35px);
   }
+
   .icon.open .menu-btn__burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
+
   nav ul ul {
     top: 70px;
     border-top: 0px;
@@ -456,18 +467,23 @@ input {
     opacity: 1;
     visibility: visible;
   }
+
   nav ul ul a {
     padding-right: 40px;
   }
+
   nav ul ul ul a {
     padding-right: 80px;
   }
+
   nav ul ul ul li {
     position: static;
   }
+
   [id^="btn"]:checked + ul {
     display: block;
   }
+
   nav ul ul li {
     border-bottom: 0px;
   }
