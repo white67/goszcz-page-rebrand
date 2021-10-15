@@ -349,6 +349,11 @@ input {
 }
 
 @media all and (max-width: 970px) {
+  nav ul li {
+    display: inline-block;
+    background: rgba(255,255,255, 0.7);
+  }
+  
   nav ul {
     margin-right: -27px;
     float: right;
@@ -385,7 +390,7 @@ input {
   nav ul li,
   nav ul ul li {
     display: block;
-    width: 300px
+    width: 300px;    
   }
 
   nav ul li a:hover {
