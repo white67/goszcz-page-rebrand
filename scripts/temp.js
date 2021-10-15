@@ -2,6 +2,98 @@
 
 Ładowanie segmentów w HTMLu odbywa się poprzez komendę <nazwa-segmentu></nazwa-segmentu>.*/
 
+/* Podstrony są układane według następującego schematu:
+
+<!DOCTYPE html>
+<html lang="PL">
+
+<head>
+
+    Standardowymi elementami heada są:
+    <meta charset="UTF-8"> - definiuje system znaków obsługiwany przez stronę
+    <link rel="Shortcut icon" href="../../files/icons/ikonka-goszcz.ico"> - wczytuje ikonę karty wyświetlaną w przeglądarce
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> - nie wiem co to
+    <meta name="KEYWORDS" content="goszczynski, goszczyński, seweryn, szkoła, 1 liceum ogólnokształcące, 1 lo, I lo, nowy targ, podhale, tischner, zespół szkół nr 1"> - definiuje słowa kluczowe przeglądarki
+
+    Charakterystyczne i fundamentalne dla podstron są poniższe:
+    <title>NAZWA-NAGŁÓWKA-vel-strony - I LO im. Seweryna Goszczyńskiego w Nowym Targu</title> - wyzwala tytuł w opisie karty w przeglądarce
+    <link href="../sub_styles.css" rel="stylesheet" type="text/css"> - pozwala na wczytanie nakładki graficznej dla podstron
+    <script src="../../scripts/temp.js"></script> - wczytuje szablony - pasek nawigacji, sekcję logo oraz stopkę
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    powyższe pozwalają na wczytanie czcionki Ubuntu na stronie
+
+    <script src="../../scripts/jquery-3.6.0.js"></script> - wczytuje bibliotekę JQuery potrzebną do poprawnego działania strony
+    <script src="../../scripts/iconFill.js"></script> - pozwala na poprawne wczytywanie ikon w odpowiednich kolorach
+
+    <script src="../../scripts/changeContrast.js"></script>
+    <script src="../../scripts/changeFontSize.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    powyższe wczytują skrypty odpowiedzialne za zmianę kontrastu i rozmiaru czcionki
+
+</head>
+
+<body>
+    <anty-stopka></anty-stopka> - wywołuje szablon o tej samej nazwie temp.js - czerwony pas u góry strony
+    <nav-bar></nav-bar> - jak wyżej - biały pas nawigacji u góry strony
+    <sect-main></sect-main> - jak wyżej - banner oddzielający nawigację od mainBody
+
+    <main class="center">
+        <div class="mainBody"> - stanowi fundament pod główną kartę z zawartością
+            <div class="mainSection"> - tworzy białą kartę w obrębie mainBody
+                <div class="mainSectionTitle"> - div obsługujący nagłówek
+                    <div class="mainSectionTitleText">
+
+                        <span>NAZWA-NAGŁÓWKA</span> - wyświetla odpowiedni tekst w nagłówku pod bannerem
+
+                    </div>
+
+                    <div class="smallLine"></div> - tworzy wąską linię na prawo od tytułu nagłówka
+                </div>
+
+                <div class="mainSectionContent"> - pozwala na stabilizację pozycji wewnętrznych elementów
+                    <div class="mainSectionContentText"> - obsługuje główną treść tekstową
+
+                        tekst tekst tekst tekst tekst <a [...]>[...]</div>
+
+                        <img [...] src="ścieżka-dostępu-obrazka"> - wywołuje wycentrowany obrazek.
+
+                        Do umieszczania kilku zdjęć obok siebie stosuje się poniższe:
+                        <div class="mainSectionContentGallery"> - tworzy przestrzeń wyrównującą elementy galerii
+
+                            <div class="galEl"> - tworzy element galerii składający się ze zdjęcia i opisu
+                                <div class="galPh"> - obsługuje zdjęcie
+                                    <a href="link-do-wybranej-strony">
+                                        <img src="ścieżka-dostępu-obrazka" title="tytuł-który-wyświetli-się-po-najechaniu-na-zdjęcie">
+                                    </a>
+                                </div>
+                                <div class="galDesc">Opis obrazka</div> - pozwala definiować opis obrazka
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <logo-bar></logo-bar> - wczytuje sekcję logo z temp.js
+
+        </div>
+    </main>
+
+    <main>
+		<div class="scrollToTopBtn"><img src="../../files/icons/scrollup.svg"></div> - wczytuje teksturę przycisku przewijania w górę strony
+		<script src="../../scripts/scrollingbut.js"></script> - wczytuje skrypt pozwalający przewijanie
+	</main>
+
+    <wielka-stopa></wielka-stopa> - wczytuje stopkę z pliku temp.js
+
+</body>
+</html>
+*/
+
 class AntyStopka extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
