@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* zmienne przechowujące odpowiednie kolory */
 :root {
   --red: #9a3231;
   --darkred: #751312;
@@ -21,48 +22,14 @@ html {
   --burger: #9a3231;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  outline: none;
-  box-sizing: border-box;
-}
-
-/*
-* {
-  color: #ffff00 !important;
-  background-color: black !important;
-}
-
-:root {
-  --red: #ffff00 !important;
-  --darkred: #ffff00 !important;
-  --lightred: #ffff00 !important;
-  --superwhite: #ffff00 !important;
-  --lightgrey: #ffff00 !important;
-  --darkblue: #ffff00 !important;
-  --darkblue2: #ffff00 !important;
-  --normalgrey: #ffff00 !important;
-  --blendblue: #ffff00 !important;
-  --borderSize: 2px;
-  --logoYoutube: #ffff00 !important;
-  --logoFacebook: #ffff00 !important;
-  --logoInstagram: #ffff00 !important;
-}
-*/
-
-*::-webkit-scrollbar {
-  width: 15px;
-}
-
-*::-webkit-scrollbar-track {
-  background: none;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #878787;
-  border-radius: 10px;
-}
+/* BODY */
+/* BODY */
+/* BODY */
+/* BODY */
+/* BODY */
+/* BODY */
+/* BODY */
+/* BODY */
 
 body {
   font-family: "Ubuntu", sans-serif;
@@ -87,6 +54,28 @@ body a {
   text-decoration: none;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #878787;
+  border-radius: 10px;
+}
+
+/* HEADER */
+/* HEADER */
 /* HEADER */
 /* HEADER */
 /* HEADER */
@@ -229,6 +218,8 @@ header {
 /* MAIN NAV*/
 /* MAIN NAV*/
 /* MAIN NAV*/
+/* MAIN NAV*/
+/* MAIN NAV*/
 
 .menue {
   display: flex;
@@ -338,16 +329,11 @@ input {
   margin-right: 40px;
 }
 
-/*
-933 PX
-933 PX
-933 PX
-*/
-
-.arrow{
+.arrow {
   display: none;
 }
 
+/* MENU dla mniej niż ???px*/
 @media all and (max-width: 970px) {
   nav ul li {
     display: inline-block;
@@ -464,7 +450,7 @@ input {
     transform: translateY(12px);
   }
 
-  /* ANIMATION */
+  /* animacja */
   .icon.open .menu-btn__burger {
     transform: translateX(-50px);
     background: transparent;
@@ -660,25 +646,23 @@ input {
   max-width: 15px;
 }
 
-/* MAIN SECTION*/
-/* MAIN SECTION*/
-/* MAIN SECTION*/
-/* MAIN SECTION*/
-/* MAIN SECTION*/
-/* MAIN SECTION*/
-/* MAIN SECTION*/
-/* MAIN SECTION*/
-/* MAIN SECTION*/
-/* MAIN SECTION*/
+/* MAIN SECTION */
+/* MAIN SECTION */
+/* MAIN SECTION */
+/* MAIN SECTION */
+/* MAIN SECTION */
+/* MAIN SECTION */
+/* MAIN SECTION */
+/* MAIN SECTION */
 
 section {
   display: flex;
-  background-image: url("./files/graphic/banner-nowy-targ.png"); /* The image used */
-  background-color: var(--bgWhite); /* Used if the image is unavailable */
-  height: 600px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: url("./files/graphic/banner-nowy-targ.png");
+  background-color: var(--bgWhite);
+  height: 600px;
+  background-position: center; /* wycentruj grafikę */
+  background-repeat: no-repeat;
+  background-size: cover; /* rozszerz grafikę aby pokrywała całość diva */
 }
 
 .sectionMain {
@@ -689,7 +673,7 @@ section {
   width: 100%;
   font-size: 300%;
   white-space: nowrap;
-  padding-left: 5%;
+  padding-left: 3%;
 }
 
 .sectionMainTitle {
@@ -702,11 +686,12 @@ section {
 
 .mainTitle {
   padding: 2% 0% 1% 0%;
+  margin-left: -5%;
 }
 
 .mainTitle span{
   background-color: var(--darkblue2);
-  padding: 2% 5% 2% 0%;
+  padding: 2% 5% 2% 5%;
 }
 
 @media only screen and (max-width: 820px) {
@@ -762,7 +747,6 @@ section {
 /* MAIN BODY */
 /* MAIN BODY */
 /* MAIN BODY */
-/* MAIN BODY */
 
 main {
   display: flex;
@@ -787,12 +771,6 @@ main {
   border-radius: 10px;
   width: 100%;
 }
-
-/*
-.secondNav div {
-  border: var(--borderSize) solid green;
-}
-*/
 
 .secondNav a {
   text-decoration: none;
@@ -1045,6 +1023,9 @@ main {
 /* FOOTER */
 /* FOOTER */
 /* FOOTER */
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
 
 .footerMain {
   display: flex;
@@ -1061,10 +1042,7 @@ main {
   align-content: right;
   flex-wrap: wrap;
   padding: 40px;
-  border: 1px solid var(--lightgrey);
-  border-top: none;
-  border-left: none;
-  border-bottom: none;
+  border-right: 1px solid var(--lightgrey);
 }
 
 .ftrLeftSchoolName {
@@ -1188,6 +1166,9 @@ main {
   }
 }
 
+/* SCROLLBTN */
+/* SCROLLBTN */
+/* SCROLLBTN */
 /* SCROLLBTN */
 /* SCROLLBTN */
 /* SCROLLBTN */
