@@ -319,31 +319,34 @@ nav ul ul li a {
   line-height: 25px;
 }
 
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  right: 150px;
+}
+
 .show,
 input {
   display: none;
-}
-
-.fa-plus {
-  font-size: 100%;
-  margin-right: 40px;
 }
 
 .arrow {
   display: none;
 }
 
-/* MENU dla mniej niż ???px*/
-@media all and (max-width: 970px) {
-  nav ul li {
-    display: inline-block;
-    background: rgba(255,255,255, 0.7);
-  }
-  
+/*
+933 PX
+933 PX
+933 PX
+*/
+
+
+@media all and (max-width: 933px) {  
   nav ul {
     margin-right: -27px;
-    float: right;
+    float: center;
     text-align: center;
+    
   }
 
   .thinnerfont {
@@ -362,11 +365,6 @@ input {
     padding-top: 10px;
   }
 
-  nav ul li:hover > ul {
-    display: block;
-    width: 0px;
-  }
-
   .show + a,
   ul {
     display: none;
@@ -376,7 +374,7 @@ input {
   nav ul li,
   nav ul ul li {
     display: block;
-    width: 300px;    
+    width: 300px;
   }
 
   nav ul li a:hover {
@@ -392,6 +390,21 @@ input {
     font-family: "Ubuntu", sans-serif;
     font-weight: 600;
     cursor: pointer;
+  }
+
+  label.show:hover {
+    color: var(--red);
+  }
+  
+  label.show:hover > .arrow {
+    border: solid var(--red);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    padding: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
 
   label.icon {
@@ -450,7 +463,7 @@ input {
     transform: translateY(12px);
   }
 
-  /* animacja */
+  /* ANIMATION */
   .icon.open .menu-btn__burger {
     transform: translateX(-50px);
     background: transparent;
@@ -494,15 +507,6 @@ input {
   nav ul ul li {
     border-bottom: 0px;
   }
-  .arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    margin-left: 10px;
-    padding: 4px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
 }
 
 .menueLogo {
@@ -518,6 +522,17 @@ input {
     height: 80px;
     align-items: center;
     margin-top: -100px;
+  }
+
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-left: 10px;
+    padding: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 2px;
   }
 }
 
