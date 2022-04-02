@@ -1,3 +1,15 @@
+<?php
+
+	session_start();
+	
+	if ((isset($_SESSION['zalogowany'])) && ($_SESSION['zalogowany']==true))
+	{
+		header('Location: po_zal.php');
+		exit();
+	}
+
+?>
+
 <!DOCTYPE html>
 <html lang="PL">
     
@@ -22,7 +34,7 @@
 			<img src="../../files/admin-panel/login.svg">
 		</div>
 		<div class="logowanie">
-			<form action="../panel/index.html">
+			<form action="zaloguj.php" method="post">
 				<img src="../../files/admin-panel/book.svg">
                 <br><br>
 				<h2 class="title">Witaj</h2>
@@ -32,7 +44,7 @@
            		   </div>
            		   <div class="div">
            		   		<h5>Nazwa użytkownika</h5>
-           		   		<input type="text" class="input">
+           		   		<input type="text" name="login" class="input">
            		   </div>
            		</div>
            		<div class="input-div pass">
@@ -41,7 +53,7 @@
            		   </div>
            		   <div class="div">
            		    	<h5>Hasło</h5>
-           		    	<input type="password" class="input">
+           		    	<input type="password" name="haslo" class="input">
             	   </div>
             	</div>
                 <br>
@@ -49,6 +61,11 @@
             </form>
         </div>
     </div>
+	
+	<?php
+		if(isset($_SESSION['blad']))	echo $_SESSION['blad'];
+	?>	
+
     <script type="text/javascript" src="animation.js"></script>
 </body>
 
