@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="PL">
+    
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
 <?php
 
 	session_start();
@@ -43,7 +52,7 @@
 				
 			} else {
 				
-				$_SESSION['blad'] = '<span style="color:red">Nieprawidłowy login lub hasło!</span>';
+				$_SESSION['blad'] = '<span style="color:#662026; font-size: 1.2rem">Nieprawidłowy login lub hasło!</span>';
 				header('Location: index.php');
 				
 			}

@@ -57,14 +57,15 @@
             	   </div>
             	</div>
                 <br>
+				<?php
+				if(isset($_SESSION['blad']))	echo $_SESSION['blad'];
+				?>
             	<input type="submit" class="btn" value="Zaloguj">
             </form>
         </div>
     </div>
 	
-	<?php
-		if(isset($_SESSION['blad']))	echo $_SESSION['blad'];
-	?>	
+
 
     <script type="text/javascript" src="animation.js"></script>
 </body>
