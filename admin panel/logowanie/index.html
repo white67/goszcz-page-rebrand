@@ -47,22 +47,6 @@
                 <br>
             	<input type="submit" class="btn" value="Zaloguj">
             </form>
-			
-			<?php
-			
-			$user_password = mysqli_real_escape_string($dbconn, $_POST["password"]);
-			$user_email = mysqli_real_escape_string($dbconn, $_POST["email"]);
-			$query = mysqli_query($dbconn, "SELECT * FROM users WHERE user_email ='$user_email'");
-			
-			if (mysqli_num_rows($query_login) > 0) {
-			   $record = mysqli_fetch_assoc($query_login);
-			   $hash = $record["user_passworhash"];
-			   if (password_verify($user_password, $hash)) {
-				  $_SESSION["current_user"] = user_id;
-			   }
-			}
-			?>
-
         </div>
     </div>
     <script type="text/javascript" src="animation.js"></script>
