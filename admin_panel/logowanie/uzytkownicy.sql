@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `uzytkownicy` (
 INSERT INTO `uzytkownicy` (`id`, `user`, `pass`) VALUES
 (1, 'admin', 'admin'),
 (2, 'login', 'haslo'),
-(3, 'grzes', 'slowik');
+(3, 'test', 'test');
 
 
 ALTER TABLE `uzytkownicy`
