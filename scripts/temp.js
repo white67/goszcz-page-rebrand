@@ -162,7 +162,6 @@ class NavBar extends HTMLElement {
             <input type="checkbox" id="btn">
             <ul>
                 <li><a href="../../index.html">Strona główna</a></li>
-                <li><a href="#">Aktualności</a></li>
                 <li>
                 <a href="#">Szkoła<i class="arrow"></i></a>
                 <ul>
@@ -194,6 +193,7 @@ class NavBar extends HTMLElement {
                 </ul>
                 </li>
                 <li><a href="../szkola/kontakt.html" class="test">Kontakt</a></li>
+                <li><a href="../../admin_panel/logowanie/index.php">Logowanie</a></li>
             </ul>
         </nav>
     </div>
